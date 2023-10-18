@@ -45,8 +45,13 @@ function IsiAbout() {
                                 <p>Tentang saya</p>
                             </div>
                             <div className='space-y-4'>
-                                <h1 className='mt-6 text-xl font-semibold '>Proficient Full Stack Developer with Strong Backend Expertise and Frontend Experience...</h1>
-                                <p className='text-sm dark:text-zinc-400'>As a Freelance Full Stack Developer with a medium focus on backend development and experience in frontend, I have the skills necessary to create scalable and secure web solutions. With meticulous attention to detail, I prioritize efficient backend development to ensure seamless functionality. Additionally, I have expertise in API integration and hands-on experience in frontend development, which enriches my ability to deliver holistic solutions.</p>
+                                {/* <h1 className='mt-6 text-xl font-semibold '>Proficient Full Stack Developer with Strong Backend Expertise and Frontend Experience...</h1> */}
+                                <p className='text-sm dark:text-zinc-400 mt-4'>
+                                    Saya <span className='text-white font-semibold'>Mohamad Hasyim Ridwan</span>, merupakan lulusan <span className='text-white font-semibold'>Program Manajemen Transportasi Udara pada STP AVIASI Jakarta.</span> Meskipun saya <span className='text-white font-semibold'>lulusan Program Manajemen Transportasi Udara,</span> hal ini <span className='text-white font-semibold'>tidak menghambat saya</span> untuk mampu mengoperasikan komputer dengan baik, menjadi Web Developer, IT Support, familiar dengan beberapa software, beradaptasi dengan lingkungan baru serta <span className='text-white font-semibold'>menyukai tantangan dan disiplin waktu.</span> Saya sangat yakin dengan kualifikasi, pengalaman, dan kemampuan saya, bahwa saya dapat <span className='text-white font-semibold'>berkontribusi pada perusahaan untuk mencapai tujuannya.</span>
+                                </p>
+                                <p className='text-sm dark:text-zinc-400'>
+                                    Serta saya Seorang Pengembang <span className='text-white font-semibold'>Full Stack </span>yang Cakap dengan Keahlian <span className='text-white font-semibold'>Backend</span> yang Cukup dan <span className='text-white font-semibold'>Pengalaman di Frontend</span>, menawarkan pendekatan inovatif dalam pengembangan aplikasi berkat <span className='text-white font-semibold'>latar belakang pendidikan yang unik.</span> Meski berasal dari <span className='text-white font-semibold'>jurusan yang berbeda,</span> pemahaman saya tentang kode pemrograman dan teknologi terkini memungkinkan saya untuk <span className='text-white font-semibold'>menciptakan solusi digital yang efisien dan responsif.</span> Kemampuan ini, dikombinasikan dengan perspektif multidisiplin saya, memungkinkan saya untuk menghadirkan solusi yang holistik dan memenuhi kebutuhan pengguna secara mendalam.
+                                </p>
                             </div>
                         </div>
                     </div>
