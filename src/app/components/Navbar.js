@@ -32,12 +32,12 @@ function Navbar() {
                 </ul>
             </div>
             <div className='w-full text-xl lg:w-2/6 '>
-                <a className='font-bold justify-centerflex md:hidden text-teal-300'>MHR</a>
+                <a className='font-bold justify-centerflex md:hidden dark:text-teal-300 text-black'>MHR</a>
                 <a className='font-bold justify-centerflex hidden md:block text-teal-300'>Mohamad Hasyim Ridwan</a>
             </div>
-            <div className='flex items-center gap-4 p-2 transition-all border rounded-lg border-zinc-300 hover:border-gray-600'>
-                <button className='dark:text-white text-teal-300' onClick={() => setTheme("light")}>Light</button>
-                <button className='text-black  dark:text-teal-300' onClick={() => setTheme("dark")}>Dark</button>
+            <div className='flex items-center gap-4 p-2 transition-all border rounded-lg bg-teal-300 border-zinc-300 hover:border-gray-600 shadow-xl'>
+                <button className='dark:text-white text-teal-600 font-bold' onClick={() => setTheme("light")}>Light</button>
+                <button className='text-black  dark:text-teal-600 font-bold' onClick={() => setTheme("dark")}>Dark</button>
             </div>
 
         </div>

@@ -11,7 +11,7 @@ function IsiAbout() {
                     <Image src={gambarkanan} width={"100%"} className='rounded-3xl' />
                 </div>
                 <div className='my-4 text-center'>
-                    <h3 className='text-2xl font-bold tracking-wider text-center text-black hover:text-teal-300'><span className='text-teal-300 hover:text-white'>Hi!</span> I'm Mohamad Hasyim Ridwan</h3>
+                    <h3 className='text-2xl font-bold tracking-wider text-center dark:text-white text-black hover:text-teal-300'><span className='text-teal-300  hover:text-white'>Hi!</span> I'm Mohamad Hasyim Ridwan</h3>
                     <p className='font-light text-teal-300 animate-typing f '>Full Stack Developer</p>
                 </div>
                 <div className='my-2 space-y-2 text-sm text-center lg:my-10 font-poppins text-zinc-400'>
@@ -42,7 +42,7 @@ function IsiAbout() {
 
                         <div className="w-full px-4 py-4 lg:py-12 lg:w-1/2 font-poppins">
                             <div className='relative flex items-center gap-2 text-xl md:justify-start justify-center z-1 font-bold'>
-                                <p className='font-bold dark:hover:text-teal-300 text-black dark:text-white hover:text-teal-300'>Tentang saya</p>
+                                <p className='font-bold dark:hover:text-teal-300 text-black dark:text-teal-300 hover:text-teal-300'>Tentang saya</p>
                             </div>
                             <div className='space-y-4'>
                                 {/* <h1 className='mt-6 text-xl font-semibold '>Proficient Full Stack Developer with Strong Backend Expertise and Frontend Experience...</h1> */}
@@ -58,19 +58,29 @@ function IsiAbout() {
                 </div>
                 <div className=' gap-8 lg:mt-2 mt-10'>
                     <div className=' font-poppins  lg:p-4 lg:from-zinc-100 lg:to-transparent lg:border-zinc-300 border-0 lg:border border-b-0 rounded-lg lg:bg-gradient-to-br lg:dark:from-zinc-900 lg:dark:to-transparent dark:border-zinc-800 '>
-                        <h1 className='text-lg font-bold justify-center md:justify-start flex hover:text-teal-300 dark:hover:text-teal-300 text-black dark:text-white'>My Skills</h1>
-                        <div className='flex flex-wrap  gap-4 mt-4 '>
+                        <h1 className='text-lg font-bold justify-center md:justify-center flex   hover:text-teal-300 dark:hover:text-teal-300 text-black dark:text-teal-300'>My Skills</h1>
+                        <h1 className='text-lg mt-4 font-bold justify-center md:justify-start flex hover:text-teal-300 dark:hover:text-teal-300 text-black dark:text-white mb-3'>Tech</h1>
+                        <div className='flex flex-wrap  gap-4 '>
                             <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>React JS</button>
                             <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>React Vite</button>
-                            <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>Sequelize</button>
                             <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>Next JS</button>
-                            <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>Fire Base</button>
                             <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>Express JS</button>
                             <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>Node JS</button>
+                            <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>Fire Base</button>
+                            <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>Sequelize</button>
                             <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>MySql</button>
+                        </div>
+                       
+                        <h1 className='text-lg mt-4 font-bold justify-center md:justify-start flex hover:text-teal-300 dark:hover:text-teal-300 text-black dark:text-white mb-3'>Cloud</h1>
+                        <div className='flex flex-wrap  gap-4 '>
                             <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>Azure Cloud</button>
                             <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>Google Cloud</button>
                             <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>Digital Ocean</button>
+                            <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>Amazon</button>
+                        </div>
+
+                        <h1 className='text-lg mt-4 font-bold justify-center md:justify-start flex hover:text-teal-300 dark:hover:text-teal-300 text-black dark:text-white mb-3'>Style</h1>
+                        <div className='flex flex-wrap  gap-4 '>
                             <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>TailWind</button>
                             <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>Bootstrap </button>
                             <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>Ant Design </button>
