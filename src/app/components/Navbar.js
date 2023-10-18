@@ -17,7 +17,8 @@ function Navbar() {
                 </ul>
             </div>
             <div className='w-full text-xl lg:w-2/6 '>
-                <a className='font-bold justify-centerflex'>MHR</a>
+                <a className='font-bold justify-centerflex md:hidden text-teal-300'>MHR</a>
+                <a className='font-bold justify-centerflex hidden md:block text-teal-300'>Mohamad Hasyim Ridwan</a>
             </div>
             <div className='flex items-center gap-4 p-2 transition-all border rounded-lg border-zinc-300 hover:border-gray-600'>
                 <button>Dark/Light</button>
