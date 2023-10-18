@@ -11,7 +11,7 @@ function IsiAbout() {
                     <Image src={gambarkanan} width={"100%"} className='rounded-3xl' />
                 </div>
                 <div className='my-4 text-center'>
-                    <h3 className='text-2xl font-bold tracking-wider text-center hover:text-teal-300'><span className='text-teal-300 hover:text-white'>Hi!</span> I'm Mohamad Hasyim Ridwan</h3>
+                    <h3 className='text-2xl font-bold tracking-wider text-center text-black hover:text-teal-300'><span className='text-teal-300 hover:text-white'>Hi!</span> I'm Mohamad Hasyim Ridwan</h3>
                     <p className='font-light text-teal-300 animate-typing f '>Full Stack Developer</p>
                 </div>
                 <div className='my-2 space-y-2 text-sm text-center lg:my-10 font-poppins text-zinc-400'>
@@ -41,16 +41,16 @@ function IsiAbout() {
 
 
                         <div className="w-full px-4 py-4 lg:py-12 lg:w-1/2 font-poppins">
-                            <div className='relative flex items-center gap-2 text-xl font-normal md:justify-start justify-center z-1 font-bold'>
-                                <p className='font-bold hover:text-teal-300'>Tentang saya</p>
+                            <div className='relative flex items-center gap-2 text-xl md:justify-start justify-center z-1 font-bold'>
+                                <p className='font-bold dark:hover:text-teal-300 text-black dark:text-white hover:text-teal-300'>Tentang saya</p>
                             </div>
                             <div className='space-y-4'>
                                 {/* <h1 className='mt-6 text-xl font-semibold '>Proficient Full Stack Developer with Strong Backend Expertise and Frontend Experience...</h1> */}
-                                <p className='text-sm dark:text-zinc-400 mt-4'>
-                                    Saya <span className='text-white hover:text-teal-300 '>Mohamad Hasyim Ridwan</span>, merupakan lulusan <span className='text-white hover:text-teal-300'>Program Manajemen Transportasi Udara pada STP AVIASI Jakarta.</span> Meskipun saya <span className='text-white hover:text-teal-300'>lulusan Program Manajemen Transportasi Udara,</span> hal ini <span className='text-white hover:text-teal-300'>tidak menghambat saya</span> untuk mampu mengoperasikan komputer dengan baik, menjadi Web Developer, IT Support, familiar dengan beberapa software, beradaptasi dengan lingkungan baru serta <span className='text-white hover:text-teal-300'>menyukai tantangan dan disiplin waktu.</span> Saya sangat yakin dengan kualifikasi, pengalaman, dan kemampuan saya, bahwa saya dapat <span className='text-white hover:text-teal-300'>berkontribusi pada perusahaan untuk mencapai tujuannya.</span>
+                                <p className='text-black text-sm dark:text-zinc-400 mt-4'>
+                                    Saya <span className='dark:text-white hover:text-teal-300 dark:hover:text-teal-300 '>Mohamad Hasyim Ridwan</span>, merupakan lulusan <span className='dark:text-white hover:text-teal-300 dark:hover:text-teal-300'>Program Manajemen Transportasi Udara pada STP AVIASI Jakarta.</span> Meskipun saya <span className='dark:text-white hover:text-teal-300 dark:hover:text-teal-300'>lulusan Program Manajemen Transportasi Udara,</span> hal ini <span className='dark:text-white hover:text-teal-300 dark:hover:text-teal-300'>tidak menghambat saya</span> untuk mampu mengoperasikan komputer dengan baik, menjadi Web Developer, IT Support, familiar dengan beberapa software, beradaptasi dengan lingkungan baru serta <span className='dark:text-white hover:text-teal-300 dark:hover:text-teal-300'>menyukai tantangan dan disiplin waktu.</span> Saya sangat yakin dengan kualifikasi, pengalaman, dan kemampuan saya, bahwa saya dapat <span className='dark:text-white hover:text-teal-300 dark:hover:text-teal-300'>berkontribusi pada perusahaan untuk mencapai tujuannya.</span>
                                 </p>
-                                <p className='text-sm dark:text-zinc-400'>
-                                    Serta saya Seorang Pengembang <span className='text-white hover:text-teal-300'>Full Stack </span>yang Cakap dengan Keahlian <span className='text-white hover:text-teal-300'>Backend</span> yang Cukup dan <span className='text-white hover:text-teal-300'>Pengalaman di Frontend</span>, menawarkan pendekatan inovatif dalam pengembangan aplikasi berkat <span className='text-white hover:text-teal-300'>latar belakang pendidikan yang unik.</span> Meski berasal dari <span className='text-white hover:text-teal-300'>jurusan yang berbeda,</span> pemahaman saya tentang kode pemrograman dan teknologi terkini memungkinkan saya untuk <span className='text-white hover:text-teal-300'>menciptakan solusi digital yang efisien dan responsif.</span> Kemampuan ini, dikombinasikan dengan perspektif multidisiplin saya, memungkinkan saya untuk menghadirkan solusi yang holistik dan memenuhi kebutuhan pengguna secara mendalam.
+                                <p className='text-black text-sm dark:text-zinc-400'>
+                                    Serta saya Seorang Pengembang <span className='dark:text-white hover:text-teal-300 dark:hover:text-teal-300'>Full Stack </span>yang Cakap dengan Keahlian <span className='dark:text-white hover:text-teal-300 dark:hover:text-teal-300'>Backend</span> yang Cukup dan <span className='dark:text-white hover:text-teal-300 dark:hover:text-teal-300'>Pengalaman di Frontend</span>, menawarkan pendekatan inovatif dalam pengembangan aplikasi berkat <span className='dark:text-white hover:text-teal-300 dark:hover:text-teal-300'>latar belakang pendidikan yang unik.</span> Meski berasal dari <span className='dark:text-white hover:text-teal-300 dark:hover:text-teal-300'>jurusan yang berbeda,</span> pemahaman saya tentang kode pemrograman dan teknologi terkini memungkinkan saya untuk <span className='dark:text-white hover:text-teal-300 dark:hover:text-teal-300'>menciptakan solusi digital yang efisien dan responsif.</span> Kemampuan ini, dikombinasikan dengan perspektif multidisiplin saya, memungkinkan saya untuk menghadirkan solusi yang holistik dan memenuhi kebutuhan pengguna secara mendalam.
                                 </p>
                             </div>
                         </div>
@@ -58,7 +58,7 @@ function IsiAbout() {
                 </div>
                 <div className=' gap-8 lg:mt-2 mt-10'>
                     <div className=' font-poppins  lg:p-4 lg:from-zinc-100 lg:to-transparent lg:border-zinc-300 border-0 lg:border border-b-0 rounded-lg lg:bg-gradient-to-br lg:dark:from-zinc-900 lg:dark:to-transparent dark:border-zinc-800 '>
-                        <h1 className='text-lg font-bold justify-center md:justify-start flex hover:text-teal-300 '>My Skills</h1>
+                        <h1 className='text-lg font-bold justify-center md:justify-start flex hover:text-teal-300 dark:hover:text-teal-300 text-black dark:text-white'>My Skills</h1>
                         <div className='flex flex-wrap  gap-4 mt-4 '>
                             <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>React JS</button>
                             <button className='text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 '>React Vite</button>

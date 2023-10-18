@@ -1,6 +1,21 @@
+"use client"
 import React from 'react'
+import { useEffect, useState } from "react"
+const { useTheme } = require("next-themes")
 
 function Navbar() {
+
+    const { theme, setTheme } = useTheme()
+    const [mountee, setMounted] = useState(false)
+
+    useEffect(() => {
+        setMounted(true)
+    }, [])
+
+    if (!mountee) {
+        return null
+    }
+
     return (
         <div className='flex items-center justify-between py-5 mb-4 text-zinc-500 dark:text-zinc-300 '>
             <div className='fixed inset-0 z-10 h-screen transition-transform duration-200 transform scale-0 lg:scale-100 lg:h-fit lg:static backdrop-filter backdrop-blur-xl lg:backdrop-blur-0 lg:w-4/6'>
@@ -21,8 +36,8 @@ function Navbar() {
                 <a className='font-bold justify-centerflex hidden md:block text-teal-300'>Mohamad Hasyim Ridwan</a>
             </div>
             <div className='flex items-center gap-4 p-2 transition-all border rounded-lg border-zinc-300 hover:border-gray-600'>
-                <button>Dark/Light</button>
-
+                <button className='dark:text-white text-teal-300' onClick={() => setTheme("light")}>Light</button>
+                <button className='text-black  dark:text-teal-300' onClick={() => setTheme("dark")}>Dark</button>
             </div>
 
         </div>
