@@ -6,7 +6,7 @@ import Image from 'next/image'
 function IsiAbout() {
     return (
         <div className='text-white flex justify-center gap-4 mt-4'>
-            <div className='hidden lg:w-5/12 lg:block lg:p-4 lg:from-zinc-100 lg:to-transparent lg:border-zinc-300 border-0 lg:border border-b-0 rounded-lg lg:bg-gradient-to-br lg:dark:from-zinc-900 lg:dark:to-transparent dark:border-zinc-800 '>
+            <div className='hidden lg:w-9/12 lg:block lg:p-4 lg:from-zinc-100 lg:to-transparent lg:border-zinc-300 border-0 lg:border border-b-0 rounded-lg lg:bg-gradient-to-br lg:dark:from-zinc-900 lg:dark:to-transparent dark:border-zinc-800 '>
                 <div className='relative flex justify-center mx-4 my-2'>
                     <Image src={gambarkanan} width={"100%"} className='rounded-3xl' />
                 </div>
