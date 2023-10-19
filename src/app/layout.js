@@ -1,8 +1,11 @@
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import './globals.css'
 import Providers from './Providers'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Poppins({
+  subsets: ['latin'],
+  weight: ["400"]
+})
 
 export const metadata = {
   title: 'Portofolio Mohamad Hasyim Ridwan',
@@ -14,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en" >
       <body className={inter.className}>
         <Providers>
-            {children}
+          {children}
         </Providers>
       </body>
     </html>
