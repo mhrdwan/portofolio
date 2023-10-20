@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 const { useTheme } = require("next-themes")
 import gambar from "../assets/IMG/292817461_7649943481742901_6633087870742063213_n.jpg"
 import Image from 'next/image'
+import Link from 'next/link'
 function Navbar() {
 
     const { theme, setTheme } = useTheme()
@@ -26,13 +27,13 @@ function Navbar() {
                         <button onClick={() => setScale("scale-0")} className='box-content px-4 py-2 border rounded-full border-zinc-500 hover:bg-zinc-900'>X</button>
                     </li>
                     <li className='block mx-4 mr-10 font-normal lg:py-2 lg:px-4 lg:font-bold border-zinc-700 lg:m-0 lg:inline-block'>
-                        <a className='text-sm transition-all  hover:text-teal-300 text-teal-300 cursor-pointer'>About</a>
+                        <Link Link href={"/"} className='text-sm transition-all  hover:text-teal-300 text-teal-300 cursor-pointer'>About</Link>
                     </li>
                     <li className='block mx-4 mr-10 font-normal lg:py-2 lg:px-4 lg:font-bold border-zinc-700 lg:m-0 lg:inline-block'>
-                        <a className='text-sm transition-all  hover:text-teal-300 text-teal-300  cursor-pointer'>Portofolio</a>
+                        <Link href="/portofolio" className='text-sm transition-all  hover:text-teal-300   cursor-pointer'>Portofolio</Link>
                     </li>
                     <li className='block mx-4 mr-10 font-normal lg:py-2 lg:px-4 lg:font-bold border-zinc-700 lg:m-0 lg:inline-block'>
-                        <a className='text-sm transition-all  hover:text-teal-300 text-teal-300  cursor-pointer'>Blog</a>
+                        <Link href={"/blog"} className='text-sm transition-all  hover:text-teal-300   cursor-pointer'>Blog</Link>
                     </li>
                 </ul>
                 <div className=' mx-6  shadow-2xl bg-zinc-50 dark:bg-zinc-800 lg:hidden  lg:p-4 lg:from-zinc-100 lg:to-transparent lg:border-zinc-300 border-0 lg:border border-b-0 rounded-lg lg:bg-gradient-to-br lg:dark:from-zinc-900 lg:dark:to-transparent dark:border-zinc-800 '>
