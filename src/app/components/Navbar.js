@@ -16,15 +16,15 @@ function Navbar() {
     if (!mountee) {
         return null
     }
-  
+
     return (
         <div className='flex items-center justify-between py-5 mb-4 text-zinc-500 dark:text-zinc-300 '>
-            <div  className={`fixed inset-0 z-10 h-screen transition-transform duration-200 transform ${scales} lg:scale-100 lg:h-fit lg:static backdrop-filter backdrop-blur-xl lg:backdrop-blur-0 lg:w-4/6`}>
+            <div className={`fixed inset-0 z-10 h-screen transition-transform duration-200 transform ${scales} lg:scale-100 lg:h-fit lg:static backdrop-filter backdrop-blur-xl lg:backdrop-blur-0 lg:w-4/6`}>
                 <ul className='pb-6 m-6 space-y-4 shadow-2xl lg:shadow-none rounded-xl bg-zinc-50 lg:pb-0 lg:m-0 dark:bg-zinc-800 lg:dark:bg-transparent lg:rounded-none'>
-                   <li className='flex items-center justify-between px-4 py-2 text-sm lg:py-0 lg:hidden'>
-                    <p>Navigation</p>
-                    <button onClick={()=>setScale("scale-0")} className='box-content px-4 py-2 border rounded-full border-zinc-500 hover:bg-zinc-900'>X</button>
-                   </li>
+                    <li className='flex items-center justify-between px-4 py-2 text-sm lg:py-0 lg:hidden'>
+                        <p>Navigation</p>
+                        <button onClick={() => setScale("scale-0")} className='box-content px-4 py-2 border rounded-full border-zinc-500 hover:bg-zinc-900'>X</button>
+                    </li>
                     <li className='block mx-4 mr-10 font-normal lg:py-2 lg:px-4 lg:font-bold border-zinc-700 lg:m-0 lg:inline-block'>
                         <a className='text-sm transition-all  hover:text-teal-300 text-teal-300 cursor-pointer'>About</a>
                     </li>
@@ -35,7 +35,7 @@ function Navbar() {
                         <a className='text-sm transition-all  hover:text-teal-300 text-teal-300  cursor-pointer'>Blog</a>
                     </li>
                 </ul>
-                <div className=' mx-6 shadow-2xl bg-zinc-50 dark:bg-zinc-800 lg:hidden  lg:p-4 lg:from-zinc-100 lg:to-transparent lg:border-zinc-300 border-0 lg:border border-b-0 rounded-lg lg:bg-gradient-to-br lg:dark:from-zinc-900 lg:dark:to-transparent dark:border-zinc-800 '>
+                <div className=' mx-6  shadow-2xl bg-zinc-50 dark:bg-zinc-800 lg:hidden  lg:p-4 lg:from-zinc-100 lg:to-transparent lg:border-zinc-300 border-0 lg:border border-b-0 rounded-lg lg:bg-gradient-to-br lg:dark:from-zinc-900 lg:dark:to-transparent dark:border-zinc-800 '>
                     <div className='relative flex justify-center mx-4 my-2'>
                         <Image className='w-40 h-40 px-2 py-2 rounded-2xl' src={gambar} />
                     </div>
@@ -49,11 +49,11 @@ function Navbar() {
                         <p className='inline-block border-b border-zinc-400'>+62 (812) 21871961</p>
 
                     </div>
-                    <div className='mt-10 space-y-2 text-center'>
-                        <button className='px-16 py-2 font-semibold transition-all duration-75 bg-teal-400 rounded-full dark:text-white hover:bg-teal-800 hover:text-white'>
-                        Hire Me!
+                    <div className='mt-10 space-y-2   flex flex-col w-full '>
+                        <button className='px-16 py-2 mx-auto font-semibold transition-all duration-75 bg-teal-400 rounded-full dark:text-white hover:bg-teal-800 hover:text-white'>
+                            Hire Me!
                         </button>
-                        <a className='block px-12 py-2 font-semibold text-white transition-all duration-75 rounded-full bg-zinc-700 hover:bg-teal-800 hover:text-white'>
+                        <a className='flex items-center  justify-center px-12 py-2 mx-auto font-semibold text-white transition-all duration-75 rounded-full bg-zinc-700 hover:bg-teal-800 hover:text-white'>
                             Download CV
                         </a>
                     </div>
@@ -67,7 +67,7 @@ function Navbar() {
                 <button className='dark:text-white text-teal-600 font-bold' onClick={() => setTheme("light")}>Light</button>
                 <button className='text-black  dark:text-teal-600 font-bold' onClick={() => setTheme("dark")}>Dark</button>
             </div>
-            <button onClick={()=>setScale("scale-100")} className='font-semibold hover:text-teal-300 ml-3 md:hidden flex items-center gap-2 px-4 py-2 text-sm border rounded-full lg:hidden hover:border-zinc-600 active:bg-zinc-600 border-zinc-400'>
+            <button onClick={() => setScale("scale-100")} className='font-semibold hover:text-teal-300 ml-3 md:hidden flex items-center gap-2 px-4 py-2 text-sm border rounded-full lg:hidden hover:border-zinc-600 active:bg-zinc-600 border-zinc-400'>
                 Menu
             </button>
         </div>
