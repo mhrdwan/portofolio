@@ -8,9 +8,9 @@ function Portofolio() {
     return (
         <div className='px-6 pt-10 lg:pt-0 lg:px-32 '>
             <Navbar />
-            <div className='text-white flex justify-center mt-4  items-center  '>
+            <div className='text-white flex justify-center mt-4  items-center gap-4 '>
 
-                <div className='w-3/12 hidden md:block'>
+                <div className=' w-2/12 hidden md:block'>
                     <SisiKiri />
                 </div>
                 <div className='lg:w-5/7 w-full '>

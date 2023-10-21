@@ -22,7 +22,7 @@ function Navbar() {
         return null; // atau komponen placeholder lainnya
     }
     return (
-        <div className='flex items-center justify-between py-5 mb-4 text-zinc-500 dark:text-zinc-300 '>
+        <div className='flex items-center justify-between py-5 mb-4 text-zinc-500 dark:text-zinc-300  '>
             <div className={`fixed inset-0 z-10 h-screen transition-transform duration-200 transform ${scales} lg:scale-100 lg:h-fit lg:static backdrop-filter backdrop-blur-xl lg:backdrop-blur-0 lg:w-4/6`}>
                 <ul className='pb-6 m-6 space-y-4 shadow-2xl lg:shadow-none rounded-xl lg:pb-0 lg:m-0 dark:bg-zinc-800 lg:dark:bg-transparent lg:rounded-none'>
                     <li className='flex items-center justify-between px-4 py-2 text-sm lg:py-0 lg:hidden'>
