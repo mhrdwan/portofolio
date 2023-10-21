@@ -12,12 +12,18 @@ function Navbar() {
     const { scrollY } = useScroll()
 
     const [hide, sethide] = useState(false)
-
+    const [warna, setwarna] = useState("")
     useMotionValueEvent(scrollY, "change", (latest) => {
         const Sebelumnya = scrollY.getPrevious()
-        if (latest > Sebelumnya && latest > 2) {
+        console.log(latest);
+        if (latest > Sebelumnya && latest > 500) {
             sethide(true)
-        } else {
+            setwarna("dark:md:bg-zinc-900")
+        } else if (latest == 0) {
+            setwarna("bg-transparent")
+        }
+        else {
+            setwarna("dark:bg-zinc-900")
             sethide(false)
         }
     })
@@ -25,7 +31,7 @@ function Navbar() {
     const { theme, setTheme } = useTheme()
     const [mounted, setMounted] = useState(false);
     const NamaHalaman = usePathname();
-    const [scales, setScale] = useState("scale-0")
+    const [scales, setScale] = useState("dark:scale-0")
     useEffect(() => {
         setMounted(true);
     }, []);
@@ -36,7 +42,7 @@ function Navbar() {
 
     return (
 
-        <div className={`flex items-center justify-between py-5 mb-4 text-zinc-500 dark:text-zinc-300  ${hide === false ? "dark:bg-customColor   bg-white transition-all duration-700 ease-in-out" : ""} top-0 sticky z-50`} style={hide === false ? { backgroundColor: '#121212' } : {}}>
+        <div className={`flex items-center justify-between py-5 mb-4 text-zinc-500 dark:text-zinc-300  ${hide === false ? `  ${warna} bg-white transition-all duration-700 ease-in-out` : ""} top-0 sticky z-50`} >
             <div className={`fixed inset-0 z-10 h-screen transition-transform duration-200 transform ${scales} lg:scale-100 lg:h-fit lg:static backdrop-filter backdrop-blur-xl lg:backdrop-blur-0 lg:w-4/6`}>
                 <motion.nav
                     variants={{
