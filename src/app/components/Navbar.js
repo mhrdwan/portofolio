@@ -16,7 +16,7 @@ function Navbar() {
     useMotionValueEvent(scrollY, "change", (latest) => {
         const Sebelumnya = scrollY.getPrevious()
         console.log(latest);
-        if (latest > Sebelumnya && latest > 500) {
+        if (latest > Sebelumnya && latest > 50) {
             sethide(true)
             setwarna("dark:md:bg-zinc-900")
         } else if (latest == 0) {
