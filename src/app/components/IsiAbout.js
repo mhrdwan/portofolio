@@ -6,10 +6,10 @@ import SisiKiri from './SisiKiri'
 function IsiAbout() {
     return (
         <div className='text-white flex justify-center gap-4 mt-4'>
-            <div className='lg:w-6/12'>
+            <div className='w-2/12 hidden md:block'>
                 <SisiKiri />
             </div>
-            <div className='lg:w-5/7'>
+            <div className='lg:w-5/7 w-full '>
                 <div className='  lg:p-4 lg:from-zinc-100 lg:to-transparent lg:border-zinc-300 border-0 lg:border border-b-0 rounded-lg lg:bg-gradient-to-br lg:dark:from-zinc-900 lg:dark:to-transparent dark:border-zinc-800 '>
                     <div className='flex flex-col justify-center gap-2 lg:flex-row items-center'>
                         <div className=' h-52 bg-red-100  lg:w-1/2 lg:h-96 rounded-3xl relative justify-center overflow-hidden  w-full'>

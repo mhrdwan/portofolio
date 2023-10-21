@@ -21,7 +21,7 @@ function Blog() {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center items-center sm:text-sm text-base   md:hidden h-screen '>Portofolio Page Under Maintenance</div>
+            <div className='flex justify-center items-center sm:text-sm text-base   md:hidden h-screen '>Blog Page Under Maintenance</div>
         </div>
     )
 }
