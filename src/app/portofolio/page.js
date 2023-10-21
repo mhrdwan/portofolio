@@ -5,6 +5,8 @@ import Navbar from '../components/Navbar'
 import Image from 'next/image'
 
 function Portofolio() {
+
+
     return (
         <div className='px-6 pt-10 lg:pt-0 lg:px-32 '>
             <Navbar />
@@ -17,13 +19,13 @@ function Portofolio() {
                     <div className='  lg:p-4 lg:from-zinc-100 lg:to-transparent  lg:border-zinc-300 border-0 lg:border border-b-0 rounded-lg lg:bg-gradient-to-br lg:dark:from-zinc-900 lg:dark:to-transparent dark:border-zinc-800 '>
                         <div className='flex flex-col justify-center gap-2 lg:flex-row items-center '>
                             <div className="w-full px-4 py-4 lg:py-12 lg:w-1/2 font-poppins sm:flex sm:justify-center  hidden">
-                            <p className='flex justify-center items-center  sm:hidden md:block w-full'>Portofolio Page Under Maintenance</p>
+                                <p className='flex justify-center items-center  sm:hidden md:block w-full '>Portofolio Page Under Maintenance</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center items-center sm:text-sm text-base   md:hidden h-screen '>Portofolio Page Under Maintenance</div>
+            <div className='flex justify-center items-center sm:text-sm text-base   md:hidden h-screen  '>Portofolio Page Under Maintenance</div>
 
         </div>
     )
