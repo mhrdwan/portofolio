@@ -134,7 +134,7 @@ function Navbar() {
                 animate={hide ? "hidden" : "visible"}
                 transition={{ duration: 0.25, ease: easeInOut }}
             >
-                <button onClick={() => setScale("scale-100")} className='font-semibold hover:text-teal-300 ml-3 md:hidden flex items-center gap-2 px-4 py-2 text-sm border rounded-full lg:hidden hover:border-zinc-600 active:bg-zinc-600 border-zinc-400'>
+                <button onClick={() => setScale("scale-100")} className='font-semibold hover:text-teal-300 ml-3  flex items-center gap-2 px-4 py-2 text-sm border rounded-full lg:hidden hover:border-zinc-600 active:bg-zinc-600 border-zinc-400'>
                     Menu
 
                 </button>
