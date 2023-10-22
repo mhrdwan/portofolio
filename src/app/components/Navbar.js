@@ -12,20 +12,14 @@ function Navbar() {
     const { scrollY } = useScroll()
 
     const [hide, sethide] = useState(false)
-    const [warna, setwarna] = useState("dark:md:bg-zinc-900")
     const [angka, setangka] = useState("")
     useMotionValueEvent(scrollY, "change", (latest) => {
         const Sebelumnya = scrollY.getPrevious()
-        console.log(angka);
         setangka(latest)
         if (latest > Sebelumnya && latest > 50) {
             sethide(true)
-            setwarna("dark:md:bg-zinc-900")
-        } else if (latest === 0) {
-            setwarna("bg-transparent")
-        }
+        } 
         else {
-            setwarna("dark:bg-zinc-900")
             sethide(false)
         }
     })
