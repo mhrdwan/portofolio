@@ -27,7 +27,7 @@ function Navbar() {
     const { theme, setTheme } = useTheme()
     const [mounted, setMounted] = useState(false);
     const NamaHalaman = usePathname();
-    const [scales, setScale] = useState("dark:scale-0")
+    const [scales, setScale] = useState("scale-0")
     useEffect(() => {
         setMounted(true);
     }, []);
@@ -41,8 +41,8 @@ function Navbar() {
         <div style={{
             backgroundColor: (theme === "system" || (theme === "dark" && angka >= 5)) ? "#121212" : "",
             opacity: hide ? 0 : 1,
-            transition: "opacity 0.25 ease" 
-        }} className={`flex items-center justify-between py-5 mb-4 text-zinc-500 dark:text-zinc-300   ${hide === false && theme === "dark" && angka >= 2 ? `dark:bg-zinc-900 bg-white  transition-all duration-700 ease-in-out` : ""}  ${angka <= 2 && theme === "dark" ? `dark:bg-transparent bg-white  transition-all duration-700 ease-in-out` : ""} ${hide === false && theme === "light" ? ` bg-white  transition-all duration-700 ease-in-out` : ""} top-0 sticky z-50`} >
+            transition: "opacity 0.25 ease"
+        }} className={`flex items-center justify-between py-5 mb-4 text-zinc-500 dark:text-zinc-300   ${hide === false && theme === "dark" && angka >= 2 ? ` bg-white  transition-all duration-700 ease-in-out` : ""}  ${angka <= 2 && theme === "light" ? `dark:bg-transparent bg-white  transition-all duration-700 ease-in-out` : ""} ${hide === false && theme === "light" ? ` bg-white  transition-all duration-700 ease-in-out` : ""} top-0 sticky z-50`} >
             <div className={`fixed inset-0 z-10 h-screen transition-transform duration-200 transform ${scales} lg:scale-100 lg:h-fit lg:static backdrop-filter backdrop-blur-xl lg:backdrop-blur-0 lg:w-4/6`}>
                 <motion.nav
                     variants={{
@@ -54,11 +54,13 @@ function Navbar() {
                 >
                     <ul className='pb-6 m-6 space-y-4 shadow-2xl lg:shadow-none rounded-xl lg:pb-0 lg:m-0 dark:bg-zinc-800 lg:dark:bg-transparent lg:rounded-none'>
                         <li className='flex items-center justify-between px-4 py-2 text-sm lg:py-0 lg:hidden'>
-                            <p>Navigation</p>
+                            <p >Navigation</p>
                             <button onClick={() => setScale("scale-0")} className='box-content px-4 py-2 border rounded-full border-zinc-500 hover:bg-zinc-900'>X</button>
                         </li>
                         <li className='block mx-4 mr-10 font-normal lg:py-2 lg:px-4 lg:font-bold border-zinc-700 lg:m-0 lg:inline-block'>
-                            <Link Link href={"/"} className={`${NamaHalaman === "/" ? "text-teal-300" : ""} text-sm transition-all  hover:text-teal-300 cursor-pointer`}>About</Link>
+                            <Link Link href={"/"} className={`${NamaHalaman === "/" ? "text-teal-300" : ""} text-sm transition-all  hover:text-teal-300 cursor-pointer`}>
+                                <p className=''>About</p>
+                            </Link>
                         </li>
                         <li className='block mx-4 mr-10 font-normal lg:py-2 lg:px-4 lg:font-bold border-zinc-700 lg:m-0 lg:inline-block'>
                             <Link href="/portofolio" className={`${NamaHalaman === "/portofolio" ? "text-teal-300" : ""} text-sm transition-all  hover:text-teal-300   cursor-pointer`}>Portofolio</Link>
