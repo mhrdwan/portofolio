@@ -44,7 +44,7 @@ function Navbar() {
 
     return (
 
-        <div className={`flex items-center justify-between py-5 mb-4 text-zinc-500 dark:text-zinc-300  ${hide === false && theme === "dark" ? `dark:bg-zinc-900 bg-white  transition-all duration-700 ease-in-out` : ""}  ${hide === false && theme === "dark" && angka <= 5 ? `dark:bg-transparent bg-white  transition-all duration-700 ease-in-out` : ""} ${hide === false && theme === "light" ? `dark:bg-zinc-900 bg-white  transition-all duration-700 ease-in-out` : ""} top-0 sticky z-50`} >
+        <div className={`flex items-center justify-between py-5 mb-4 text-zinc-500 dark:text-zinc-300  ${hide === false && theme === "dark" && angka >= 2  ? `dark:bg-zinc-900 bg-white  transition-all duration-700 ease-in-out` : ""}  ${ angka <= 2  && theme === "dark" ? `dark:bg-transparent bg-white  transition-all duration-700 ease-in-out` : ""} ${hide === false && theme === "light" ? ` bg-white  transition-all duration-700 ease-in-out` : ""} top-0 sticky z-50`} >
             <div className={`fixed inset-0 z-10 h-screen transition-transform duration-200 transform ${scales} lg:scale-100 lg:h-fit lg:static backdrop-filter backdrop-blur-xl lg:backdrop-blur-0 lg:w-4/6`}>
                 <motion.nav
                     variants={{
@@ -130,6 +130,7 @@ function Navbar() {
             >
                 <button onClick={() => setScale("scale-100")} className='font-semibold hover:text-teal-300 ml-3 md:hidden flex items-center gap-2 px-4 py-2 text-sm border rounded-full lg:hidden hover:border-zinc-600 active:bg-zinc-600 border-zinc-400'>
                     Menu
+           
                 </button>
             </motion.nav>
         </div >
