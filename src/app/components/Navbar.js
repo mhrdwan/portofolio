@@ -66,7 +66,7 @@ function Navbar() {
                             <Link href="/portofolio" className={`${NamaHalaman === "/portofolio" ? "text-teal-300" : ""} text-sm transition-all  hover:text-teal-300   cursor-pointer`}>Portofolio</Link>
                         </li>
                         <li className='block mx-4 mr-10 font-normal lg:py-2 lg:px-4 lg:font-bold border-zinc-700 lg:m-0 lg:inline-block'>
-                            <Link href={"/blog"} className={`${NamaHalaman === "/blog" ? "text-teal-300" : ""} text-sm transition-all  hover:text-teal-300   cursor-pointer`}>Blog</Link>
+                            <Link href={"/sertifikat"} className={`${NamaHalaman === "/sertifikat" ? "text-teal-300" : ""} text-sm transition-all  hover:text-teal-300   cursor-pointer`}>Sertifikat</Link>
                         </li>
                     </ul>
                     <div className=' mx-6  shadow-2xl bg-zinc-50 dark:bg-zinc-800 lg:hidden  lg:p-4 lg:from-zinc-100 lg:to-transparent lg:border-zinc-300 border-0 lg:border border-b-0 rounded-lg lg:bg-gradient-to-br lg:dark:from-zinc-900 lg:dark:to-transparent dark:border-zinc-800 '>

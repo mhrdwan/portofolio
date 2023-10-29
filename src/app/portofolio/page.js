@@ -9,6 +9,7 @@ import porto_bensin from "../assets/IMG/porto_bensin.png"
 import CLI_Tiktok_Downloader from "../assets/IMG/CLI_Tiktok_Downloader.png"
 import CLI_Cek_Cuaca from "../assets/IMG/CLI_Cek_Cuaca.png"
 import porto_RajaCepat from "../assets/IMG/porto_RajaCepat.png"
+import porto_Eureka_Logistic from "../assets/IMG/porto_Eureka_Logistic.png"
 function Portofolio() {
 
 
@@ -23,7 +24,7 @@ function Portofolio() {
                 <div className='lg:w-5/7 w-full  '>
                     <div className='title  sm:w-8/12  w-full'>
                         <p className='font-bold text-xl  md:text-3xl'>Berbagai hal yang telah saya buat untuk meninggalkan jejak di dunia programming.</p>
-                        <p className='text-zinc-400 mt-5 text-xs'>Saya telah bekerja pada banyak proyek kecil selama bertahun-tahun, tetapi daftar daftar ini yang ingin saya tampilkan.</p>
+                        <p className='text-zinc-400 mt-5 text-xs'>Saya telah belajar dan bekerja pada beberapa proyek selama 7 bulan terhitung sampai portofolio ini di update tanggal <span className='font-bold text-white'>10/29/2023,</span> daftar-daftar ini yang ingin saya tampilkan.</p>
                     </div>
                     <div className='Menu text-sm  flex space-x-5 mt-10'>
                         <p className='hover:text-teal-300 text-teal-300 cursor-pointer'>All</p>
@@ -83,6 +84,23 @@ function Portofolio() {
                         </div>
                         <div className='p-4 transition-all duration-100 rounded-lg shadow-lg cursor-pointer lg:p-2 dark:shadow-none hover:bg-zinc-200 dark:hover:bg-zinc-800'>
                             <div className='rounded-lg shadow-md'>
+                                <Image className='rounded-lg shadow-md h-44' height={150} width={500} src={porto_Eureka_Logistic} alt='="porto_eureka_tracking' />
+                            </div>
+                            <div className='p-2'>
+                                <h1 className='text-sm font-semibold line-clamp-2 dark:text-white text-zinc-600'>Web App - Eureka Logistic </h1>
+                                <a className='flex mt-5 items-center gap-1 text-xs hover:text-teal-300  text-white' href="https://elogsv4.eurekalogistics.co.id/" target='_blank'>
+                                    <svg className='h-3 w-3' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg>
+                                    elogsv4.eurekalogistics.co.id
+                                </a>
+                                <div className='flex flex-wrap gap-2 mt-4'>
+                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>React JS</button>
+                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>Ant Design</button>
+                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>Bootstrap</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='p-4 transition-all duration-100 rounded-lg shadow-lg cursor-pointer lg:p-2 dark:shadow-none hover:bg-zinc-200 dark:hover:bg-zinc-800'>
+                            <div className='rounded-lg shadow-md'>
                                 <Image className='rounded-lg shadow-md h-44' height={150} width={500} src={porto_bensin} alt='="porto_eureka_tracking' />
                             </div>
                             <div className='p-2'>
@@ -102,7 +120,7 @@ function Portofolio() {
                                 <Image className='rounded-lg shadow-md h-44' height={150} width={500} src={CLI_Tiktok_Downloader} alt='="porto_eureka_tracking' />
                             </div>
                             <div className='p-2'>
-                                <h1 className='text-sm font-semibold line-clamp-2 dark:text-white text-zinc-600 '>CLI - Download Tiktok Telegram </h1>
+                                <h1 className='text-sm font-semibold line-clamp-2 dark:text-white text-zinc-600 '>CLI - Download Tiktok </h1>
                                 <a className='flex mt-5 items-center gap-1 text-xs hover:text-teal-300  text-white ' href='https://github.com/mhrdwan/tiktok-downloader-telegram' target='_blank'>
                                     <svg className='h-3 w-3' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg>
                                     github.com/mhrdwan/tiktok-downloader-telegram
