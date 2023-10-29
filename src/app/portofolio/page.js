@@ -5,6 +5,8 @@ import Navbar from '../components/Navbar'
 import Image from 'next/image'
 import portoimage from "../assets/IMG/portoimage.png"
 import porto_eureka_tracking from "../assets/IMG/porto_eureka_tracking.png"
+import porto_bensin from "../assets/IMG/porto_bensin.png"
+import CLI_Tiktok_Downloader from "../assets/IMG/CLI_Tiktok_Downloader.png"
 function Portofolio() {
 
 
@@ -27,21 +29,20 @@ function Portofolio() {
                         <p className='hover:text-teal-300 cursor-pointer'>Project</p>
                         <p className='hover:text-teal-300 cursor-pointer'>CLI</p>
                     </div>
-                    <div className='content  grid md:grid-cols-3'>
+                    <div className='content  grid md:grid-cols-3 '>
                         <div className='p-4 transition-all duration-100 rounded-lg shadow-lg cursor-pointer lg:p-2 dark:shadow-none hover:bg-zinc-200 dark:hover:bg-zinc-800'>
                             <div className='rounded-lg shadow-md'>
                                 <Image className='rounded-lg shadow-md h-44' height={150} width={500} alt='gambarporto' src={portoimage} />
                             </div>
                             <div className='p-2'>
-                                <h1 className='text-sm font-semibold line-clamp-2 '>Portofolio Website - Mohamad Hasyim Ridwan</h1>
-                                <a className='flex mt-5 items-center gap-1 text-xs hover:text-teal-300 ' href="https://www.mhridwan.com" target='_blank'>
+                                <h1 className='text-sm font-semibold line-clamp-2 dark:text-white text-zinc-600'>Portofolio Website - Mohamad Hasyim Ridwan</h1>
+                                <a className='flex mt-5 items-center gap-1 text-xs hover:text-teal-300  text-white' href="https://www.mhridwan.com" target='_blank'>
                                     <svg className='h-3 w-3' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg>
                                     mhridwan.com
                                 </a>
                                 <div className='flex flex-wrap gap-2 mt-4'>
                                     <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>Next JS</button>
                                     <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>TailWind</button>
-                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>asdsa</button>
                                 </div>
                             </div>
                         </div>
@@ -50,10 +51,10 @@ function Portofolio() {
                                 <Image className='rounded-lg shadow-md h-44' height={150} width={500} src={porto_eureka_tracking} alt='="porto_eureka_tracking' />
                             </div>
                             <div className='p-2'>
-                                <h1 className='text-sm font-semibold line-clamp-2 '>Portofolio Website & Tracking Pengiriman Pada Website </h1>
-                                <a className='flex mt-5 items-center gap-1 text-xs hover:text-teal-300 ' href="https://eurekalogistics.co.id/" target='_blank'>
+                                <h1 className='text-sm font-semibold line-clamp-2 dark:text-white text-zinc-600'>Portofolio Website & Tracking Pengiriman Pada Website </h1>
+                                <a className='flex mt-5 items-center gap-1 text-xs hover:text-teal-300  text-white' href="https://eurekalogistics.co.id/" target='_blank'>
                                     <svg className='h-3 w-3' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg>
-                                    mhridwan.com
+                                    eurekalogistics.co.id
                                 </a>
                                 <div className='flex flex-wrap gap-2 mt-4'>
                                     <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>React Vite</button>
@@ -63,17 +64,37 @@ function Portofolio() {
                         </div>
                         <div className='p-4 transition-all duration-100 rounded-lg shadow-lg cursor-pointer lg:p-2 dark:shadow-none hover:bg-zinc-200 dark:hover:bg-zinc-800'>
                             <div className='rounded-lg shadow-md'>
-                                <img className='rounded-lg shadow-md' height={150} width={500} src='https://ilmansunanuddin.my.id/api/uploads/2548937.png' />
+                                <Image className='rounded-lg shadow-md h-44' height={150} width={500} src={porto_bensin} alt='="porto_eureka_tracking' />
                             </div>
                             <div className='p-2'>
-                                <h1 className='text-sm font-semibold line-clamp-2'>Screencast Website - CodingAsik</h1>
+                                <h1 className='text-sm font-semibold line-clamp-2 dark:text-white text-zinc-600 '>Web App - Manajemen Stock Bensin Eceran dengan Chat Live Firebase </h1>
+                                <a className='flex mt-5 items-center gap-1 text-xs hover:text-teal-300 hover:cursor-not-allowed  text-white ' >
+                                    <svg className='h-3 w-3' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg>
+                                    Private
+                                </a>
                                 <div className='flex flex-wrap gap-2 mt-4'>
-                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>asdsa</button>
-                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>asdsa</button>
-                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>asdsa</button>
+                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>React JS</button>
+                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>Fire Base</button>
                                 </div>
                             </div>
                         </div>
+                        <div className='p-4 transition-all duration-100 rounded-lg shadow-lg cursor-pointer lg:p-2 dark:shadow-none hover:bg-zinc-200 dark:hover:bg-zinc-800'>
+                            <div className='rounded-lg shadow-md'>
+                                <Image className='rounded-lg shadow-md h-44' height={150} width={500} src={CLI_Tiktok_Downloader} alt='="porto_eureka_tracking' />
+                            </div>
+                            <div className='p-2'>
+                                <h1 className='text-sm font-semibold line-clamp-2 dark:text-white text-zinc-600 '>CLI - Download Tiktok Telegram </h1>
+                                <a className='flex mt-5 items-center gap-1 text-xs hover:text-teal-300  text-white '  href='https://github.com/mhrdwan/tiktok-downloader-telegram' target='_blank'>
+                                    <svg className='h-3 w-3' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg>
+                                   github.com/mhrdwan/tiktok-downloader-telegram
+                                </a>
+                                <div className='flex flex-wrap gap-2 mt-4'>
+                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>Node JS</button>
+                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>Fire Base</button>
+                                </div>
+                            </div>
+                        </div>
+                       
 
                     </div>
                 </div>
