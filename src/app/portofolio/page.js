@@ -10,22 +10,66 @@ function Portofolio() {
     return (
         <div className='px-6 pt-10 lg:pt-0 lg:px-32 '>
             <Navbar />
-            <div className='text-white flex justify-center mt-4  items-center gap-4 '>
+            <div className='text-white flex justify-center mt-4 gap-4 '>
 
                 <div className=' w-2/12 hidden md:block'>
                     <SisiKiri />
                 </div>
-                <div className='lg:w-5/7 w-full '>
-                    <div className='  lg:p-4 lg:from-zinc-100 lg:to-transparent  lg:border-zinc-300 border-0 lg:border border-b-0 rounded-lg lg:bg-gradient-to-br lg:dark:from-zinc-900 lg:dark:to-transparent dark:border-zinc-800 '>
-                        <div className='flex flex-col justify-center gap-2 lg:flex-row items-center '>
-                            <div className="w-full px-4 py-4 lg:py-12 lg:w-1/2 font-poppins sm:flex sm:justify-center  hidden">
-                                <p className='flex justify-center items-center  sm:hidden md:block w-full '>Portofolio Page Under Maintenance</p>
+                <div className='lg:w-5/7 w-full  '>
+                    <div className='title  sm:w-8/12  w-full'>
+                        <p className='font-bold text-xl  md:text-3xl'>Berbagai hal yang telah saya buat untuk meninggalkan jejak di dunia programming.</p>
+                        <p className='text-zinc-400 mt-5 text-xs'>Saya telah bekerja pada banyak proyek kecil selama bertahun-tahun, tetapi daftar daftar ini yang ingin saya tampilkan.</p>
+                    </div>
+                    <div className='Menu text-sm  flex space-x-5 mt-10'>
+                        <p className='hover:text-teal-300 text-teal-300 cursor-pointer'>All</p>
+                        <p className='hover:text-teal-300 cursor-pointer'>Iseng</p>
+                        <p className='hover:text-teal-300 cursor-pointer'>Project</p>
+                        <p className='hover:text-teal-300 cursor-pointer'>CLI</p>
+                    </div>
+                    <div className='content  grid md:grid-cols-3'>
+                        <div className='p-4 transition-all duration-100 rounded-lg shadow-lg cursor-pointer lg:p-2 dark:shadow-none hover:bg-zinc-200 dark:hover:bg-zinc-800'>
+                            <div className='rounded-lg shadow-md'>
+                                <img className='rounded-lg shadow-md' height={150} width={500} src='https://ilmansunanuddin.my.id/api/uploads/2548937.png' />
+                            </div>
+                            <div className='p-2'>
+                                <h1 className='text-sm font-semibold line-clamp-2'>Screencast Website - CodingAsik</h1>
+                                <div className='flex flex-wrap gap-2 mt-4'>
+                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>asdsa</button>
+                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>asdsa</button>
+                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>asdsa</button>
+                                </div>
                             </div>
                         </div>
+                        <div className='p-4 transition-all duration-100 rounded-lg shadow-lg cursor-pointer lg:p-2 dark:shadow-none hover:bg-zinc-200 dark:hover:bg-zinc-800'>
+                            <div className='rounded-lg shadow-md'>
+                                <img className='rounded-lg shadow-md' height={150} width={500} src='https://ilmansunanuddin.my.id/api/uploads/2548937.png' />
+                            </div>
+                            <div className='p-2'>
+                                <h1 className='text-sm font-semibold line-clamp-2'>Screencast Website - CodingAsik</h1>
+                                <div className='flex flex-wrap gap-2 mt-4'>
+                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>asdsa</button>
+                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>asdsa</button>
+                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>asdsa</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='p-4 transition-all duration-100 rounded-lg shadow-lg cursor-pointer lg:p-2 dark:shadow-none hover:bg-zinc-200 dark:hover:bg-zinc-800'>
+                            <div className='rounded-lg shadow-md'>
+                                <img className='rounded-lg shadow-md' height={150} width={500} src='https://ilmansunanuddin.my.id/api/uploads/2548937.png' />
+                            </div>
+                            <div className='p-2'>
+                                <h1 className='text-sm font-semibold line-clamp-2'>Screencast Website - CodingAsik</h1>
+                                <div className='flex flex-wrap gap-2 mt-4'>
+                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>asdsa</button>
+                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>asdsa</button>
+                                    <button className='px-1.5 py-0.5 text-xs rounded-lg bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'>asdsa</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center items-center sm:text-sm text-base   md:hidden h-screen  '>Portofolio Page Under Maintenance</div>
 
         </div>
     )
