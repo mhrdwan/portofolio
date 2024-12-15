@@ -50,8 +50,8 @@ const ChevronRightIcon = () => (
 
 const PortfolioItem = ({ project }) => {
   const [showModal, setShowModal] = useState(false);
+  const [showImagePreview, setShowImagePreview] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
   const handleNextImage = () => {
     if (project.images && currentImageIndex < project.images.length - 1) {
       setCurrentImageIndex((prev) => prev + 1);
@@ -148,7 +148,67 @@ const PortfolioItem = ({ project }) => {
           </div>
         </div>
       </motion.div>
+      <AnimatePresence>
+        {showImagePreview && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[60] bg-black flex items-center justify-center"
+            onClick={() => setShowImagePreview(false)}
+          >
+            {/* Close button */}
+            <motion.button
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.3 }}
+              onClick={() => setShowImagePreview(false)}
+              className="absolute right-4 top-4 z-10 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors duration-200"
+            >
+              <CloseIcon />
+            </motion.button>
 
+            {/* Full size image */}
+            <div className="relative w-full h-full p-4">
+              <Image
+                src={project.images?.[currentImageIndex] || project.image}
+                alt={project.title}
+                fill
+                className="object-contain"
+                quality={100}
+              />
+            </div>
+
+            {/* Navigation buttons */}
+            {project.images?.length > 1 && (
+              <>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handlePrevImage();
+                  }}
+                  className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors duration-200"
+                  disabled={currentImageIndex === 0}
+                >
+                  <ChevronLeftIcon />
+                </button>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleNextImage();
+                  }}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors duration-200"
+                  disabled={
+                    currentImageIndex === (project.images?.length ?? 1) - 1
+                  }
+                >
+                  <ChevronRightIcon />
+                </button>
+              </>
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
       <AnimatePresence>
         {showModal && (
           <motion.div
@@ -185,7 +245,7 @@ const PortfolioItem = ({ project }) => {
                   duration: 0.3,
                 },
               }}
-              className="relative w-[95%] sm:w-[85%] lg:max-w-3xl mx-auto bg-white dark:bg-zinc-900 rounded-lg shadow-lg overflow-hidden my-4"
+              className="relative w-[95%] sm:w-[85%] lg:max-w-4xl mx-auto bg-white dark:bg-zinc-900 rounded-lg shadow-lg overflow-hidden h-[90vh] flex flex-col"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close button */}
@@ -199,19 +259,24 @@ const PortfolioItem = ({ project }) => {
                 <CloseIcon />
               </motion.button>
 
-              {/* Image slider */}
+              {/* Image slider - fixed height */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="relative h-96"
+                className="relative h-[40%] bg-black/10 flex-shrink-0"
               >
-                <Image
-                  src={project.images?.[currentImageIndex] || project.image}
-                  alt={project.title}
-                  fill
-                  className="object-contain"
-                />
+                <div
+                  className="relative w-full h-full cursor-zoom-in"
+                  onClick={() => setShowImagePreview(true)}
+                >
+                  <Image
+                    src={project.images?.[currentImageIndex] || project.image}
+                    alt={project.title}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
 
                 {project.images?.length > 1 && (
                   <>
@@ -255,13 +320,13 @@ const PortfolioItem = ({ project }) => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="p-6"
+                className="flex-1 overflow-y-auto p-6"
               >
                 <motion.h2
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
-                  className="text-2xl font-bold mb-4 dark:text-white"
+                  className="text-xl sm:text-2xl font-bold mb-4 dark:text-white"
                 >
                   {project.title}
                 </motion.h2>
