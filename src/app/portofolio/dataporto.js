@@ -8,6 +8,7 @@ import porto_RajaCepat from "../assets/IMG/porto_RajaCepat.png";
 import porto_Eureka_Logistic from "../assets/IMG/porto_Eureka_Logistic.png";
 import API_Scraping_berita_CNN from "../assets/IMG/API_Scraping_berita_CNN.png";
 import screen_cuaca_android from "../assets/IMG/screen_cuaca_android.png";
+import siplahApp from "../assets/IMG/siplahapp.jpg";
 
 export const portfolioData = [
   {
@@ -19,12 +20,24 @@ export const portfolioData = [
     categories: ["Mobile", "Project"],
   },
   {
+    title: "Siplah Mitra APP",
+    image: siplahApp,
+    link: "https://www.linkedin.com/in/mohamad-hasyim-ridwan-1a1762b8/overlay/1731496560132/single-media-viewer/?profileId=ACoAABkHSIkB02vRkr_itH1xeGWFPVDUtGpVUws",
+    linkText: "https://www.linkedin.com/in/mohamad-hasyim-ridwan-1a1762b8/overlay/1731496560132/single-media-viewer/?profileId=ACoAABkHSIkB02vRkr_itH1xeGWFPVDUtGpVUws",
+    technologies: ["React Native","Node JS"],
+    categories: ["Mobile", "Project"],
+    description:'I developed the SIPLAH mobile app using React Native to streamline product approvals and partner management for educational supply chains. The app enables efficient workflows by reducing approval times by 30%, providing an intuitive interface for managing products, partners, and orders in real-time. This solution enhances operational transparency and optimizes the overall approval process for users.'
+  },
+  {
     title: "Portofolio Website - Mohamad Hasyim Ridwan",
     image: portoimage,
+    images: [
+      portoimage,
+    ],
     link: "https://www.mhridwan.com",
     linkText: "mhridwan.com",
     technologies: ["Next JS", "TailWind"],
-    categories: ["Portofolio", "Project"],
+    categories: ["Portofolio", "Project"]
   },
   {
     title: "Portofolio Website & Tracking Pengiriman Pada Website",
@@ -64,7 +77,7 @@ export const portfolioData = [
     link: "https://github.com/mhrdwan/slicing-figma-Company-Profile-Responsive",
     linkText: "github.com/mhrdwan/slicing-figma-Company-Profile-Responsive",
     technologies: ["React JS", "Bootstrap"],
-    categories: ["Project", "Web App"],
+    categories: ["Project", "Web App",'Portofolio'],
   },
   {
     title: "Web App - Manajemen Stock Bensin Eceran dengan Chat Live Firebase",

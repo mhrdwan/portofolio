@@ -1,6 +1,8 @@
+"use client";
 import React from 'react';
 import Navbar from './Navbar';
 import SisiKiri from './SisiKiri';
+import { motion } from 'framer-motion';
 
 const PageLayout = ({ children, showSideBar = true }) => {
   return (
@@ -8,13 +10,23 @@ const PageLayout = ({ children, showSideBar = true }) => {
       <Navbar />
       <div className='text-white flex justify-center gap-4 mt-4'>
         {showSideBar && (
-          <div className='w-2/12 hidden md:block'>
+          <motion.div
+            initial={{ x: -20, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className='w-2/12 hidden md:block'
+          >
             <SisiKiri />
-          </div>
+          </motion.div>
         )}
-        <div className='lg:w-5/7 w-full'>
+        <motion.div 
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          className='lg:w-5/7 w-full'
+        >
           {children}
-        </div>
+        </motion.div>
       </div>
     </main>
   );
