@@ -9,17 +9,28 @@ const inter = Poppins({
 });
 
 export const metadata = {
-  title: "Mohamad Hasyim Ridwan - Full Stack Developer Portfolio",
+  title: "Mohamad Hasyim Ridwan - Portofolio Pengembang Full Stack",
   description:
-    "Portfolio of Mohamad Hasyim Ridwan - Skilled Full Stack Developer specializing in React, Next.js, and modern web technologies",
+    "Portofolio Mohamad Hasyim Ridwan - Pengembang Full Stack yang terampil dengan keahlian di React, Next.js, dan teknologi web modern",
   keywords:
-    "Full Stack Developer, Web Development, React, Next.js, Node.js, Portfolio",
+    "Pengembang Full Stack, Pengembangan Web, React, Next.js, Node.js, Portofolio",
   author: "Mohamad Hasyim Ridwan",
   openGraph: {
-    title: "Mohamad Hasyim Ridwan - Full Stack Developer",
+    title: "Mohamad Hasyim Ridwan - Pengembang Full Stack",
     description:
-      "Professional portfolio showcasing web development projects and skills",
-    images: [{ url: "/363815310_9666831353387427_1604163039826260738_n.jpg" }],
+      "Portofolio profesional menampilkan proyek pengembangan web dan keterampilan",
+    url: "https://www.mhridwan.com/", 
+    siteName: "Portofolio Mohamad Hasyim Ridwan",
+    images: [
+      {
+        url: "/363815310_9666831353387427_1604163039826260738_n.jpg",
+        width: 1440,
+        height: 530,
+        alt: "Mohamad Hasyim Ridwan - Portofolio Pengembang Full Stack",
+      },
+    ],
+    locale: "id_ID",
+    type: "website",
   },
   icons: {
     icon: "/favicon.ico",
