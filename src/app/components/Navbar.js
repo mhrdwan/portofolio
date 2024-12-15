@@ -30,7 +30,7 @@ function Navbar() {
     const [scales, setScale] = useState("scale-0")
     useEffect(() => {
         setMounted(true);
-    }, []);
+    }, [theme]);
 
     if (!mounted) {
         return null;
