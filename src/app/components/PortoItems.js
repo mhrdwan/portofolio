@@ -77,13 +77,14 @@ const PortfolioItem = ({ project }) => {
         whileHover={{ y: -5 }}
         transition={{ duration: 0.2 }}
       >
-        <div className="rounded-lg shadow-md aspect-video overflow-hidden">
+        <div className="rounded-lg shadow-md aspect-[4/3] overflow-hidden">
           <Image
             className="rounded-lg shadow-md object-cover w-full h-full"
-            height={360}
-            width={640}
+            height={400}
+            width={600}
             src={project.image}
             alt={project.title}
+            quality={90}
           />
         </div>
         <div className="p-2">
@@ -92,15 +93,16 @@ const PortfolioItem = ({ project }) => {
           </h1>
           {project.link ? (
             <a
-              className="flex mt-5 items-center gap-1 text-xs hover:text-teal-300 text-white truncate"
+              className="flex mt-5 items-center gap-1 text-xs hover:text-teal-300 text-white"
               href={project.link}
               target="_blank"
               onClick={(e) => e.stopPropagation()}
-              title={project.linkText}
             >
               <svg
-                className="h-3 w-3 flex-shrink-0"
+                className="h-3 w-3"
                 xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -111,13 +113,15 @@ const PortfolioItem = ({ project }) => {
                 <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
                 <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
               </svg>
-              <span className="truncate">{project.linkText}</span>
+              {project.linkText}
             </a>
           ) : (
             <div className="flex mt-5 items-center gap-1 text-xs hover:cursor-not-allowed text-white">
               <svg
-                className="h-3 w-3 flex-shrink-0"
+                className="h-3 w-3"
                 xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -150,7 +154,7 @@ const PortfolioItem = ({ project }) => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-8"
+            className="fixed inset-0 z-50 flex items-center justify-center p-4"
             onClick={handleModalClose}
           >
             {/* Backdrop */}
@@ -164,23 +168,23 @@ const PortfolioItem = ({ project }) => {
             {/* Modal */}
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
-              animate={{ 
-                scale: 1, 
+              animate={{
+                scale: 1,
                 opacity: 1,
                 transition: {
                   type: "spring",
                   duration: 0.5,
-                  bounce: 0.3
-                }
+                  bounce: 0.3,
+                },
               }}
-              exit={{ 
+              exit={{
                 scale: 0,
                 opacity: 0,
                 transition: {
-                  duration: 0.3
-                }
+                  duration: 0.3,
+                },
               }}
-              className="relative w-full max-w-3xl bg-white dark:bg-zinc-900 rounded-lg shadow-lg overflow-hidden max-h-[90vh] overflow-y-auto"
+              className="relative w-full max-w-4xl bg-white dark:bg-zinc-900 rounded-lg shadow-lg overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close button */}
@@ -199,17 +203,14 @@ const PortfolioItem = ({ project }) => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="relative aspect-[16/9] w-full"
+                className="relative h-96"
               >
-                <div className="absolute inset-0">
-                  <Image
-                    src={project.images?.[currentImageIndex] || project.image}
-                    alt={project.title}
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-                  />
-                </div>
+                <Image
+                  src={project.images?.[currentImageIndex] || project.image}
+                  alt={project.title}
+                  fill
+                  className="object-contain"
+                />
 
                 {project.images?.length > 1 && (
                   <>
@@ -218,7 +219,7 @@ const PortfolioItem = ({ project }) => {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.3 }}
                       onClick={handlePrevImage}
-                      className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors duration-200 disabled:opacity-30 disabled:hover:bg-black/50"
+                      className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors duration-200"
                       disabled={currentImageIndex === 0}
                     >
                       <ChevronLeftIcon />
@@ -228,8 +229,10 @@ const PortfolioItem = ({ project }) => {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.3 }}
                       onClick={handleNextImage}
-                      className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors duration-200 disabled:opacity-30 disabled:hover:bg-black/50"
-                      disabled={currentImageIndex === (project.images?.length ?? 1) - 1}
+                      className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors duration-200"
+                      disabled={
+                        currentImageIndex === (project.images?.length ?? 1) - 1
+                      }
                     >
                       <ChevronRightIcon />
                     </motion.button>
@@ -257,7 +260,7 @@ const PortfolioItem = ({ project }) => {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
-                  className="text-xl md:text-2xl font-bold mb-4 dark:text-white"
+                  className="text-2xl font-bold mb-4 dark:text-white"
                 >
                   {project.title}
                 </motion.h2>
@@ -272,7 +275,7 @@ const PortfolioItem = ({ project }) => {
                     <h3 className="text-lg font-semibold mb-2 dark:text-gray-200">
                       Deskripsi
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm md:text-base">
+                    <p className="text-gray-600 dark:text-gray-400">
                       {project.description || "Tidak ada deskripsi tersedia"}
                     </p>
                   </motion.div>
@@ -311,7 +314,7 @@ const PortfolioItem = ({ project }) => {
                       <h3 className="text-lg font-semibold mb-2 dark:text-gray-200">
                         Fitur
                       </h3>
-                      <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400 text-sm md:text-base">
+                      <ul className="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400">
                         {project.features.map((feature, index) => (
                           <motion.li
                             key={index}
@@ -345,6 +348,8 @@ const PortfolioItem = ({ project }) => {
                         <svg
                           className="h-4 w-4"
                           xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="currentColor"
@@ -360,12 +365,12 @@ const PortfolioItem = ({ project }) => {
                   )}
                 </div>
               </motion.div>
-                </motion.div>
             </motion.div>
-            )}
-        </AnimatePresence>
-        </>
-    );
-    };
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  );
+};
 
-    export default PortfolioItem;   
+export default PortfolioItem;
