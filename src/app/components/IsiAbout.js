@@ -5,7 +5,7 @@ import Image from "next/image";
 // import SisiKiri from './SisiKiri'
 function IsiAbout() {
   return (
-    <div className="text-white flex justify-center gap-4 mt-4">
+    <div className="text-white flex justify-center gap-4 ">
       {/* <div className='w-2/12 hidden md:block'>
                 <SisiKiri />
             </div> */}
