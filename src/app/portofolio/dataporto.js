@@ -23,6 +23,10 @@ import waBot from "../../../public/IMG/bot_wa_masdis.jpg";
 import waBot2 from "../../../public/IMG/bot_wa_masdis2.jpg";
 import masterdiskon_web from "../../../public/IMG/masterdiskon_web.png";
 import masterdiskon_web2 from "../../../public/IMG/masterdiskon_web2.png";
+import jajaAuto from "../../../public/IMG/jaja_auto_web.png";
+import jajaAuto2 from "../../../public/IMG/jaja_auto_web2.png";
+import jajaId from "../../../public/IMG/jajaid.png";
+import jajaId2 from "../../../public/IMG/jajaid2.png";
 
 export const portfolioData = [
   {
@@ -32,7 +36,7 @@ export const portfolioData = [
     link: "https://siplah.eurekabookhouse.co.id/satdik/",
     linkText: "https://siplah.eurekabookhouse.co.id/satdik/",
     technologies: ["React JS", "Express.js", "Node.js", "TailWind"],
-    categories: ["Project", "Web App", "Api"],
+    categories: ["Project", "Web App", "Api", "DevOps"],
     description:
       "SIPLAH EUREKA adalah platform e-commerce terintegrasi untuk keperluan sekolah yang saya kembangkan menggunakan Express.js dan Next.js. Proyek ini berhasil meningkatkan efisiensi pemrosesan pesanan sebesar 20% melalui optimasi antarmuka pengguna dan performa backend. Saya juga mengimplementasikan integrasi dengan ARKAS (Aplikasi Rencana Kegiatan dan Anggaran Sekolah) untuk mempermudah proses perencanaan dan pembelian.",
     features: [
@@ -50,8 +54,8 @@ export const portfolioData = [
     images: [eureka_logistik, eureka_logistik2],
     link: "https://eurekalogistics.co.id/",
     linkText: "https://eurekalogistics.co.id/",
-    technologies: ["React JS", "Node.js", "Express.js", "WebSocket"],
-    categories: ["Project", "Web App"],
+    technologies: ["React JS", "Node.js", "Express.js"],
+    categories: ["Project", "Web App", "DevOps"],
     description:
       "Sistem tracking logistik real-time yang saya rancang dan implementasikan untuk KPU (Komisi Pemilihan Umum). Sistem ini meningkatkan transparansi dan efisiensi dalam operasi logistik pemilu. Menggunakan teknologi WebSocket untuk pembaruan data secara real-time dan antarmuka yang intuitif untuk memudahkan pemantauan pergerakan logistik.",
     features: [
@@ -64,9 +68,55 @@ export const portfolioData = [
     ],
   },
   {
+    title: "Jaja.id E-commerce Platform",
+    image: jajaId,
+    images: [jajaId, jajaId2],
+    technologies: [
+      "Express.js",
+      "Node.js",
+    ],
+    categories: ["Web App", "Api","DevOps"],
+    description:
+      "Mengembangkan platform e-commerce Jaja.id dengan fokus pada merancang solusi backend yang kuat, aman, dan skalabel. Proyek ini mencakup pengembangan arsitektur API, implementasi fitur inti e-commerce, dan optimasi kinerja sistem untuk mendukung pengalaman belanja online yang lancar.",
+    features: [
+      "Arsitektur API RESTful yang komprehensif",
+      "Manajemen katalog produk",
+      "Sistem pembayaran terintegrasi",
+      "Manajemen pesanan dan pengiriman",
+      "Autentikasi dan keamanan pengguna",
+      "Pencarian dan filter produk canggih",
+    ],
+    
+  },
+  {
+    title: "Jaja Auto Deployment",
+    link: "https://auto.jaja.id/",
+    linkText: "https://auto.jaja.id/",
+    image: jajaAuto,
+    images: [jajaAuto, jajaAuto2],
+    technologies: [
+      "Google Cloud Platform",
+      "CI/CD Pipeline",
+      "Server Migration",
+      "Cloud Infrastructure",
+      "Frontend Deployment",
+    ],
+    categories: ["Web App", "DevOps"],
+    description:
+      "Membantu tim frontend melakukan deployment aplikasi ke server Google Cloud Platform dengan mengimplementasikan pipeline CI/CD yang efisien. Proyek ini fokus pada otomatisasi proses deployment, memastikan distribusi kode yang cepat, aman, dan andal, serta mengoptimalkan infrastruktur cloud untuk performa maksimal.",
+    features: [
+      "Konfigurasi pipeline CI/CD untuk frontend",
+      "Otomatisasi proses deployment",
+      "Manajemen versi dan rollback",
+      "Monitoring performa server",
+      "Optimasi infrastruktur cloud",
+      "Implementasi strategi deployment yang aman",
+    ],
+  },
+  {
     title: "MasterDiskon Travel Platform",
     image: masterdiskon_web,
-    images: [masterdiskon_web2,masterdiskon_web],
+    images: [masterdiskon_web2, masterdiskon_web],
     link: "https://masterdiskon.com/",
     linkText: "https://masterdiskon.com/",
     technologies: [
@@ -74,6 +124,7 @@ export const portfolioData = [
       "CI/CD Pipeline",
       "Server Migration",
       "Cloud Infrastructure",
+      "Frontend Deployment",
     ],
     categories: ["Web App", "DevOps"],
     description:
