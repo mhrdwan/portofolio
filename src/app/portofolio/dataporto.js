@@ -9,6 +9,11 @@ import porto_Eureka_Logistic from "../../../public/IMG/porto_Eureka_Logistic.png
 import API_Scraping_berita_CNN from "../../../public/IMG/API_Scraping_berita_CNN.png";
 import screen_cuaca_android from "../../../public/IMG/screen_cuaca_android.png";
 import siplahApp from "../../../public/IMG/siplahapp.jpg";
+import siplahApp2 from "../../../public/IMG/siplahapp2.jpg";
+import siplahApp3 from "../../../public/IMG/siplahapp3.jpg";
+import siplahApp4 from "../../../public/IMG/siplahapp4.jpg";
+import siplahApp5 from "../../../public/IMG/siplahapp5.jpg";
+import siplahApp6 from "../../../public/IMG/siplahapp6.jpg";
 import siplahsatdik from "../../../public/IMG/siplah-satdik.png";
 import siplahSatdikdetail from "../../../public/IMG/siplahSatdikdetail.png";
 import race from "../../../public/IMG/rajaCepat.png";
@@ -71,11 +76,8 @@ export const portfolioData = [
     title: "Jaja.id E-commerce Platform",
     image: jajaId,
     images: [jajaId, jajaId2],
-    technologies: [
-      "Express.js",
-      "Node.js",
-    ],
-    categories: ["Web App", "Api","DevOps"],
+    technologies: ["Express.js", "Node.js"],
+    categories: ["Web App", "Api", "DevOps"],
     description:
       "Mengembangkan platform e-commerce Jaja.id dengan fokus pada merancang solusi backend yang kuat, aman, dan skalabel. Proyek ini mencakup pengembangan arsitektur API, implementasi fitur inti e-commerce, dan optimasi kinerja sistem untuk mendukung pengalaman belanja online yang lancar.",
     features: [
@@ -86,7 +88,6 @@ export const portfolioData = [
       "Autentikasi dan keamanan pengguna",
       "Pencarian dan filter produk canggih",
     ],
-    
   },
   {
     title: "Jaja Auto Deployment",
@@ -114,6 +115,33 @@ export const portfolioData = [
     ],
   },
   {
+    title: "Siplah Mitra APP",
+    image: siplahApp,
+    images: [
+      siplahApp,
+      siplahApp2,
+      siplahApp3,
+      siplahApp4,
+      siplahApp5,
+      siplahApp6,
+    ],
+    link: "https://www.linkedin.com/in/mohamad-hasyim-ridwan-1a1762b8/overlay/1731496560132/single-media-viewer/?profileId=ACoAABkHSIkB02vRkr_itH1xeGWFPVDUtGpVUws",
+    linkText:
+      "https://www.linkedin.com/in/mohamad-hasyim-ridwan-1a1762b8/overlay/1731496560132/single-media-viewer/?profileId=ACoAABkHSIkB02vRkr_itH1xeGWFPVDUtGpVUws",
+    technologies: ["React Native", "Node JS", "Express.js"],
+    categories: ["Mobile"],
+    description:
+      "Saya mengembangkan aplikasi mobile SIPLAH menggunakan React Native untuk mempercepat persetujuan produk dan manajemen mitra dalam rantai pasokan pendidikan. Aplikasi ini memungkinkan alur kerja yang efisien dengan mengurangi waktu persetujuan hingga 30%, menyediakan antarmuka intuitif untuk mengelola produk, mitra, dan pesanan secara real-time. Solusi ini meningkatkan transparansi operasional dan mengoptimalkan proses persetujuan secara keseluruhan untuk pengguna.",
+    features: [
+      "Notifikasi setiap ada product baru untuk di Approve",
+      "Alur kerja persetujuan produk real-time",
+      "Sistem manajemen mitra",
+      "Antarmuka mobile yang intuitif",
+      "Pelacakan dan manajemen pesanan",
+      "Komunikasi rantai pasokan yang efisien",
+    ],
+  },
+  {
     title: "MasterDiskon Travel Platform",
     image: masterdiskon_web,
     images: [masterdiskon_web2, masterdiskon_web],
@@ -137,6 +165,7 @@ export const portfolioData = [
       "Sistem rekomendasi perjalanan",
     ],
   },
+
   {
     title: "Masterdiskon WhatsApp Bot",
     image: waBot2,
@@ -190,24 +219,7 @@ export const portfolioData = [
       "Informasi layanan pengiriman lengkap",
     ],
   },
-  {
-    title: "Siplah Mitra APP",
-    image: siplahApp,
-    link: "https://www.linkedin.com/in/mohamad-hasyim-ridwan-1a1762b8/overlay/1731496560132/single-media-viewer/?profileId=ACoAABkHSIkB02vRkr_itH1xeGWFPVDUtGpVUws",
-    linkText:
-      "https://www.linkedin.com/in/mohamad-hasyim-ridwan-1a1762b8/overlay/1731496560132/single-media-viewer/?profileId=ACoAABkHSIkB02vRkr_itH1xeGWFPVDUtGpVUws",
-    technologies: ["React Native", "Node JS", "Express.js"],
-    categories: ["Mobile"],
-    description:
-      "Saya mengembangkan aplikasi mobile SIPLAH menggunakan React Native untuk mempercepat persetujuan produk dan manajemen mitra dalam rantai pasokan pendidikan. Aplikasi ini memungkinkan alur kerja yang efisien dengan mengurangi waktu persetujuan hingga 30%, menyediakan antarmuka intuitif untuk mengelola produk, mitra, dan pesanan secara real-time. Solusi ini meningkatkan transparansi operasional dan mengoptimalkan proses persetujuan secara keseluruhan untuk pengguna.",
-    features: [
-      "Alur kerja persetujuan produk real-time",
-      "Sistem manajemen mitra",
-      "Antarmuka mobile yang intuitif",
-      "Pelacakan dan manajemen pesanan",
-      "Komunikasi rantai pasokan yang efisien",
-    ],
-  },
+
   {
     title: "Mobile App - Cuaca App",
     image: screen_cuaca_android,
