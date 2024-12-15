@@ -14,19 +14,112 @@ import siplahSatdikdetail from "../../../public/IMG/siplahSatdikdetail.png";
 import race from "../../../public/IMG/rajaCepat.png";
 import race2 from "../../../public/IMG/rajaCepat2.png";
 import race3 from "../../../public/IMG/rajaCepat3.png";
+import batugin from "../../../public/IMG/batugin.png";
+import batugin2 from "../../../public/IMG/batugin2.png";
+import batugin3 from "../../../public/IMG/batugin3.png";
+import eureka_logistik from "../../../public/IMG/eureka_logistik.png";
+import eureka_logistik2 from "../../../public/IMG/eureka_logistik2.png";
+import waBot from "../../../public/IMG/bot_wa_masdis.jpg";
+import waBot2 from "../../../public/IMG/bot_wa_masdis2.jpg";
+import masterdiskon_web from "../../../public/IMG/masterdiskon_web.png";
+import masterdiskon_web2 from "../../../public/IMG/masterdiskon_web2.png";
 
 export const portfolioData = [
   {
-    title:
-      "Siplah Eureka Bookhouse | Belanja keperluan sekolah praktis dan mudah",
+    title: "SIPLAH EUREKA | Belanja keperluan sekolah praktis dan mudah",
     image: siplahsatdik,
     images: [siplahsatdik, siplahSatdikdetail],
     link: "https://siplah.eurekabookhouse.co.id/satdik/",
     linkText: "https://siplah.eurekabookhouse.co.id/satdik/",
-    technologies: ["React JS", "TailWind"],
-    categories: ["Portofolio", "Project", "Web App","API"],
+    technologies: ["React JS", "Express.js", "Node.js", "TailWind"],
+    categories: ["Project", "Web App", "Api"],
     description:
-      "Dalam proyek SIPLAH, saya bertanggung jawab untuk membuat dan mengelola API untuk mendukung berbagai fungsi, termasuk integrasi bank yang aman guna memfasilitasi pemrosesan pembayaran yang lancar dan andal. Saya juga mengimplementasikan pipeline CI/CD untuk mengotomatisasi penerapan dan pembaruan, mengurangi pekerjaan manual dan meningkatkan keandalan sistem. Integrasi ini mempercepat alur kerja keseluruhan, memastikan SIPLAH beroperasi secara efisien dan aman sebagai platform untuk manajemen rantai pasokan pendidikan.",
+      "SIPLAH EUREKA adalah platform e-commerce terintegrasi untuk keperluan sekolah yang saya kembangkan menggunakan Express.js dan Next.js. Proyek ini berhasil meningkatkan efisiensi pemrosesan pesanan sebesar 20% melalui optimasi antarmuka pengguna dan performa backend. Saya juga mengimplementasikan integrasi dengan ARKAS (Aplikasi Rencana Kegiatan dan Anggaran Sekolah) untuk mempermudah proses perencanaan dan pembelian.",
+    features: [
+      "Integrasi dengan sistem ARKAS",
+      "Optimasi performa backend dan frontend",
+      "Sistem pemrosesan pesanan yang efisien",
+      "Integrasi pembayaran yang aman",
+      "Dashboard manajemen produk dan pesanan",
+      "Sistem tracking pesanan real-time",
+    ],
+  },
+  {
+    title: "KPU Logistics Tracking System Eureka Logistics",
+    image: eureka_logistik,
+    images: [eureka_logistik, eureka_logistik2],
+    link: "https://eurekalogistics.co.id/",
+    linkText: "https://eurekalogistics.co.id/",
+    technologies: ["React JS", "Node.js", "Express.js", "WebSocket"],
+    categories: ["Project", "Web App"],
+    description:
+      "Sistem tracking logistik real-time yang saya rancang dan implementasikan untuk KPU (Komisi Pemilihan Umum). Sistem ini meningkatkan transparansi dan efisiensi dalam operasi logistik pemilu. Menggunakan teknologi WebSocket untuk pembaruan data secara real-time dan antarmuka yang intuitif untuk memudahkan pemantauan pergerakan logistik.",
+    features: [
+      "Tracking real-time untuk logistik pemilu",
+      "Dashboard monitoring komprehensif",
+      "Sistem notifikasi otomatis",
+      "Pelaporan dan analitik",
+      "Manajemen inventori terintegrasi",
+      "Interface yang user-friendly",
+    ],
+  },
+  {
+    title: "MasterDiskon Travel Platform",
+    image: masterdiskon_web,
+    images: [masterdiskon_web2,masterdiskon_web],
+    link: "https://masterdiskon.com/",
+    linkText: "https://masterdiskon.com/",
+    technologies: [
+      "Google Cloud Platform",
+      "CI/CD Pipeline",
+      "Server Migration",
+      "Cloud Infrastructure",
+    ],
+    categories: ["Web App", "DevOps"],
+    description:
+      "Platform travel dan gaya hidup inovatif yang menawarkan diskon komprehensif pada hotel, penerbangan, tur, dan pengalaman leisure. Proyek ini melibatkan migrasi infrastruktur ke Google Cloud Platform dan pengembangan pipeline CI/CD untuk meningkatkan performa dan skalabilitas platform.",
+    features: [
+      "Diskon komprehensif untuk layanan travel",
+      "Antarmuka pencarian yang ramah pengguna",
+      "Promosi di berbagai destinasi",
+      "Kemudahan booking online",
+      "Sistem rekomendasi perjalanan",
+    ],
+  },
+  {
+    title: "Masterdiskon WhatsApp Bot",
+    image: waBot2,
+    images: [waBot, waBot2],
+    technologies: ["Node.js", "typescript"],
+    categories: ["Bot"],
+    description:
+      "Bot WhatsApp yang dikembangkan untuk Masterdiskon guna mengotomatisasi pengiriman token kepada pelanggan. Solusi ini merampingkan proses komunikasi dengan mengirimkan token secara otomatis melalui platform WhatsApp, meningkatkan efisiensi dan pengalaman pelanggan.",
+    features: [
+      "Pengiriman token otomatis",
+      "Integrasi dengan sistem Masterdiskon",
+      "Komunikasi real-time melalui WhatsApp",
+      "Autentikasi token yang aman",
+      "Notifikasi pelanggan instan",
+    ],
+  },
+  {
+    title: "Batugin Company Profile",
+    image: batugin,
+    images: [batugin, batugin2, batugin3],
+    link: "https://www.batugin.co.id/",
+    linkText: "https://www.batugin.co.id/",
+    technologies: ["Next JS", "TailWind", "Ant Design"],
+    categories: ["Portofolio", "Project", "Api"],
+    description:
+      "Saya bertanggung jawab dalam pengembangan Company Profile Batugin menggunakan Next.js dan TailwindCSS. Website ini dirancang dengan fokus pada performa dan pengalaman pengguna yang optimal. Fitur-fitur utama termasuk animasi smooth, tampilan yang responsif, dan integrasi konten yang dinamis. Penggunaan Next.js memungkinkan performa yang cepat melalui static generation dan server-side rendering, sementara TailwindCSS memberikan desain yang modern dan konsisten. Implementasi SEO yang optimal memastikan visibilitas website yang baik di mesin pencarian.",
+    features: [
+      "Desain responsif untuk semua ukuran perangkat",
+      "Animasi halus untuk meningkatkan user experience",
+      "Optimasi SEO untuk meningkatkan visibilitas online",
+      "Performa tinggi dengan Next.js",
+      "Integrasi konten dinamis",
+      "UI/UX modern dengan Ant Design dan TailwindCSS",
+    ],
   },
   {
     title: "Raja Cepat Company Profile",
@@ -38,6 +131,13 @@ export const portfolioData = [
     categories: ["Portofolio", "Project", "Web App"],
     description:
       "RajaCepat adalah layanan pengiriman dan logistik yang menyediakan solusi pengiriman cepat dan andal. Mereka menawarkan berbagai layanan pengiriman untuk memenuhi kebutuhan pelanggan dengan fokus pada efisiensi dan kecepatan dalam pengiriman barang.",
+    features: [
+      "Profil perusahaan komprehensif",
+      "Sistem pelacakan pengiriman real-time",
+      "Responsive web design",
+      "Antarmuka pengguna yang intuitif",
+      "Informasi layanan pengiriman lengkap",
+    ],
   },
   {
     title: "Siplah Mitra APP",
@@ -45,10 +145,17 @@ export const portfolioData = [
     link: "https://www.linkedin.com/in/mohamad-hasyim-ridwan-1a1762b8/overlay/1731496560132/single-media-viewer/?profileId=ACoAABkHSIkB02vRkr_itH1xeGWFPVDUtGpVUws",
     linkText:
       "https://www.linkedin.com/in/mohamad-hasyim-ridwan-1a1762b8/overlay/1731496560132/single-media-viewer/?profileId=ACoAABkHSIkB02vRkr_itH1xeGWFPVDUtGpVUws",
-    technologies: ["React Native", "Node JS"],
-    categories: ["Mobile", "Project"],
+    technologies: ["React Native", "Node JS", "Express.js"],
+    categories: ["Mobile"],
     description:
       "Saya mengembangkan aplikasi mobile SIPLAH menggunakan React Native untuk mempercepat persetujuan produk dan manajemen mitra dalam rantai pasokan pendidikan. Aplikasi ini memungkinkan alur kerja yang efisien dengan mengurangi waktu persetujuan hingga 30%, menyediakan antarmuka intuitif untuk mengelola produk, mitra, dan pesanan secara real-time. Solusi ini meningkatkan transparansi operasional dan mengoptimalkan proses persetujuan secara keseluruhan untuk pengguna.",
+    features: [
+      "Alur kerja persetujuan produk real-time",
+      "Sistem manajemen mitra",
+      "Antarmuka mobile yang intuitif",
+      "Pelacakan dan manajemen pesanan",
+      "Komunikasi rantai pasokan yang efisien",
+    ],
   },
   {
     title: "Mobile App - Cuaca App",
@@ -68,7 +175,8 @@ export const portfolioData = [
     categories: ["Portofolio", "Project"],
   },
   {
-    title: "Portofolio Website & Tracking Pengiriman Pada Website",
+    title:
+      "Portofolio Website & Tracking Pengiriman Pada Website Eureka Logistics",
     image: porto_eureka_tracking,
     link: "https://eurekalogistics.co.id/",
     linkText: "eurekalogistics.co.id",
@@ -92,12 +200,12 @@ export const portfolioData = [
     categories: ["Project", "Web App"],
   },
   {
-    title: "API - Scraping Berita CNN",
+    title: "Api - Scraping Berita CNN",
     image: API_Scraping_berita_CNN,
     link: "",
     linkText: "",
     technologies: ["Node JS"],
-    categories: ["Project", "API"],
+    categories: ["Project", "Api"],
   },
   {
     title: "Web - Rumah Impian",
@@ -121,7 +229,7 @@ export const portfolioData = [
     link: "https://github.com/mhrdwan/tiktok-downloader-telegram",
     linkText: "github.com/mhrdwan/tiktok-downloader-telegram",
     technologies: ["Node JS"],
-    categories: ["CLI", "Project"],
+    categories: ["Bot", "Project"],
   },
   {
     title: "CLI - Cek Cuaca",
@@ -129,6 +237,6 @@ export const portfolioData = [
     link: "https://github.com/mhrdwan/promp-dengan-inquirer",
     linkText: "github.com/mhrdwan/promp-dengan-inquirer",
     technologies: ["Node JS"],
-    categories: ["CLI", "Project"],
+    categories: ["Bot", "Project"],
   },
 ];

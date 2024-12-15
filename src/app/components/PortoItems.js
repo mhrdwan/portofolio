@@ -320,7 +320,7 @@ const PortfolioItem = ({ project }) => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="flex-1 overflow-y-auto p-6"
+                className="flex-1 overflow-y-auto p-6 relative"
               >
                 <motion.h2
                   initial={{ opacity: 0, y: 10 }}
@@ -401,14 +401,14 @@ const PortfolioItem = ({ project }) => {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.9 }}
-                      className="pt-4"
+                       className="sticky bottom-6 right-6 flex justify-end"
                     >
                       <motion.a
                         whileHover={{ scale: 1.05 }}
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-4 py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600 whitespace-nowrap"
                       >
                         Kunjungi Project
                         <svg

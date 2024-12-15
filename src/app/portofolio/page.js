@@ -5,8 +5,6 @@ import PageLayout from "../components/PageLayout";
 import { portfolioData } from "./dataporto";
 import PortfolioItem from "../components/PortoItems";
 
-
-
 export default function Portfolio() {
   const ITEMS_PER_PAGE = 6;
   const [currentCategory, setCurrentCategory] = useState("All");
@@ -77,10 +75,10 @@ export default function Portfolio() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
-  {filteredAndPaginatedData?.map((project, index) => (
-    <PortfolioItem key={index} project={project} />
-  ))}
-</div>
+        {filteredAndPaginatedData?.map((project, index) => (
+          <PortfolioItem key={index} project={project} />
+        ))}
+      </div>
 
       {totalPages > 1 && (
         <div className="flex justify-center gap-2 mt-8 mb-8">
