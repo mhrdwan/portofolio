@@ -42,7 +42,7 @@ export const metadata = {
     siteName: "Portofolio Mohamad Hasyim Ridwan",
     images: [
       {
-        url: "https://www.mhridwan.com/IMG/363815310_9666831353387427_1604163039826260738_n.jpg",
+        url: "https://www.mhridwan.com/IMG/292363140_7641600222577227_6588402848332977786_n.jpg",
         width: 1440,
         height: 530,
         alt: "Mohamad Hasyim Ridwan - Portofolio Pengembang Full Stack",
@@ -55,7 +55,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: "Mohamad Hasyim Ridwan - Portofolio Pengembang Full Stack",
     description: "Portofolio profesional menampilkan proyek pengembangan web dan keterampilan",
-    images: ["https://www.mhridwan.com/IMG/363815310_9666831353387427_1604163039826260738_n.jpg"],
+    images: ["https://www.mhridwan.com/IMG/292363140_7641600222577227_6588402848332977786_n.jpg"],
   },
   icons: {
     icon: "/favicon.ico",
