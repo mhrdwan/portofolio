@@ -9,12 +9,31 @@ const inter = Poppins({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://www.mhridwan.com/'),
   title: "Mohamad Hasyim Ridwan - Portofolio Pengembang Full Stack",
   description:
     "Portofolio Mohamad Hasyim Ridwan - Pengembang Full Stack yang terampil dengan keahlian di React, Next.js, dan teknologi web modern",
   keywords:
-    "Pengembang Full Stack, Pengembangan Web, React, Next.js, Node.js, Portofolio",
+    "Pengembang Full Stack, Pengembangan Web, React, Next.js, Node.js, Portofolio, Web Developer, Indonesia, Teknologi Informasi",
   author: "Mohamad Hasyim Ridwan",
+  generator: "Next.js",
+  applicationName: "Portofolio Mohamad Hasyim Ridwan",
+  referrer: "origin-when-cross-origin",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  // verification: {
+  //   google: 'your-google-site-verification-code', // Optional
+  //   yandex: 'your-yandex-verification-code', // Optional
+  // },
   openGraph: {
     title: "Mohamad Hasyim Ridwan - Pengembang Full Stack",
     description:
@@ -32,10 +51,23 @@ export const metadata = {
     locale: "id_ID",
     type: "website",
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Mohamad Hasyim Ridwan - Portofolio Pengembang Full Stack",
+    description: "Portofolio profesional menampilkan proyek pengembangan web dan keterampilan",
+    images: ["https://www.mhridwan.com/IMG/363815310_9666831353387427_1604163039826260738_n.jpg"],
+  },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
+  },
+  alternates: {
+    canonical: 'https://www.mhridwan.com/',
+    languages: {
+      'en-US': 'https://www.mhridwan.com/en',
+      'id-ID': 'https://www.mhridwan.com/',
+    },
   },
 };
 
