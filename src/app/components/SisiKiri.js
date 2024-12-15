@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import gambarkanan from "../assets/IMG/363815310_9666831353387427_1604163039826260738_n.jpg"
+import gambarkanan from "../../../public/IMG/363815310_9666831353387427_1604163039826260738_n.jpg"
 import Image from 'next/image'
 
 function SisiKiri() {

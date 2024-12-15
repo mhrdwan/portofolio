@@ -1,19 +1,19 @@
-import portoimage from "../assets/IMG/portoimage.png";
-import porto_eureka_tracking from "../assets/IMG/porto_eureka_tracking.png";
-import porto_bensin from "../assets/IMG/porto_bensin.png";
-import CLI_Tiktok_Downloader from "../assets/IMG/CLI_Tiktok_Downloader.png";
-import CLI_Cek_Cuaca from "../assets/IMG/CLI_Cek_Cuaca.png";
-import porto_Rumahimpian from "../assets/IMG/porto_Rumahimpian.png";
-import porto_RajaCepat from "../assets/IMG/porto_RajaCepat.png";
-import porto_Eureka_Logistic from "../assets/IMG/porto_Eureka_Logistic.png";
-import API_Scraping_berita_CNN from "../assets/IMG/API_Scraping_berita_CNN.png";
-import screen_cuaca_android from "../assets/IMG/screen_cuaca_android.png";
-import siplahApp from "../assets/IMG/siplahapp.jpg";
-import siplahsatdik from "../assets/IMG/siplah-satdik.png";
-import siplahSatdikdetail from "../assets/IMG/siplahSatdikdetail.png";
-import race from "../assets/IMG/rajaCepat.png";
-import race2 from "../assets/IMG/rajaCepat2.png";
-import race3 from "../assets/IMG/rajaCepat3.png";
+import portoimage from "../../../public/IMG/portoimage.png";
+import porto_eureka_tracking from "../../../public/IMG/porto_eureka_tracking.png";
+import porto_bensin from "../../../public/IMG/porto_bensin.png";
+import CLI_Tiktok_Downloader from "../../../public/IMG/CLI_Tiktok_Downloader.png";
+import CLI_Cek_Cuaca from "../../../public/IMG/CLI_Cek_Cuaca.png";
+import porto_Rumahimpian from "../../../public/IMG/porto_Rumahimpian.png";
+import porto_RajaCepat from "../../../public/IMG/porto_RajaCepat.png";
+import porto_Eureka_Logistic from "../../../public/IMG/porto_Eureka_Logistic.png";
+import API_Scraping_berita_CNN from "../../../public/IMG/API_Scraping_berita_CNN.png";
+import screen_cuaca_android from "../../../public/IMG/screen_cuaca_android.png";
+import siplahApp from "../../../public/IMG/siplahapp.jpg";
+import siplahsatdik from "../../../public/IMG/siplah-satdik.png";
+import siplahSatdikdetail from "../../../public/IMG/siplahSatdikdetail.png";
+import race from "../../../public/IMG/rajaCepat.png";
+import race2 from "../../../public/IMG/rajaCepat2.png";
+import race3 from "../../../public/IMG/rajaCepat3.png";
 
 export const portfolioData = [
   {

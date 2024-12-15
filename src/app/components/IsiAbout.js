@@ -1,8 +1,8 @@
 import React from 'react'
-import gambarkiri from "../assets/IMG/292817461_7649943481742901_6633087870742063213_n.jpg"
-import gambarkiri2 from "../assets/IMG/292363140_7641600222577227_6588402848332977786_n.jpg"
+// import gambarkiri from "../assets/IMG/292817461_7649943481742901_6633087870742063213_n.jpg"
+import gambarkiri2 from "../../../public/IMG/292363140_7641600222577227_6588402848332977786_n.jpg"
 import Image from 'next/image'
-import SisiKiri from './SisiKiri'
+// import SisiKiri from './SisiKiri'
 function IsiAbout() {
     return (
         <div className='text-white flex justify-center gap-4 mt-4'>

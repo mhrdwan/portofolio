@@ -2,7 +2,7 @@
 import React from 'react'
 import { useEffect, useState } from "react"
 const { useTheme } = require("next-themes")
-import gambar from "../assets/IMG/292817461_7649943481742901_6633087870742063213_n.jpg"
+import gambar from "../../../public/IMG/292817461_7649943481742901_6633087870742063213_n.jpg"
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
