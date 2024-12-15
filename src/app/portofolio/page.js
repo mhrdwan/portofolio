@@ -10,6 +10,20 @@ export default function Portfolio() {
   const [currentCategory, setCurrentCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
 
+  // Hitung bulan secara dinamis
+  const calculateMonths = () => {
+    const startDate = new Date("2023-04-01"); // Tanggal mulai (sesuaikan dengan CV)
+    const currentDate = new Date();
+
+    let months =
+      currentDate.getMonth() -
+      startDate.getMonth() +
+      12 * (currentDate.getFullYear() - startDate.getFullYear());
+
+    // Tambahkan 1 untuk menghitung bulan penuh
+    return months + 1;
+  };
+
   const categories = useMemo(() => {
     const allCategories = new Set(
       portfolioData.flatMap((item) => item?.categories)
@@ -51,9 +65,12 @@ export default function Portfolio() {
           programming.
         </p>
         <p className="text-zinc-400 mt-5 text-xs">
-          Saya telah belajar dan bekerja pada beberapa proyek selama 7 bulan
-          terhitung sampai portofolio ini di update tanggal{" "}
-          <span className="font-bold text-white">10/29/2023,</span>{" "}
+          Saya telah belajar dan bekerja pada beberapa proyek selama{" "}
+          {calculateMonths()} bulan terhitung sampai portofolio ini di update
+          tanggal{" "}
+          <span className="font-bold text-white">
+            {new Date().toLocaleDateString("id-ID")},{" "}
+          </span>{" "}
           daftar-daftar ini yang ingin saya tampilkan.
         </p>
       </div>
