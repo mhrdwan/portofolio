@@ -86,6 +86,9 @@ function IsiAbout() {
                 Express JS
               </button>
               <button className="text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 ">
+                Typescript
+              </button>
+              <button className="text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 ">
                 Node JS
               </button>
               <button className="text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 ">
