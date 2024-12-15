@@ -24,7 +24,7 @@ export const portfolioData = [
     link: "https://siplah.eurekabookhouse.co.id/satdik/",
     linkText: "https://siplah.eurekabookhouse.co.id/satdik/",
     technologies: ["React JS", "TailWind"],
-    categories: ["Portofolio", "Project", "Web App"],
+    categories: ["Portofolio", "Project", "Web App","API"],
     description:
       "Dalam proyek SIPLAH, saya bertanggung jawab untuk membuat dan mengelola API untuk mendukung berbagai fungsi, termasuk integrasi bank yang aman guna memfasilitasi pemrosesan pembayaran yang lancar dan andal. Saya juga mengimplementasikan pipeline CI/CD untuk mengotomatisasi penerapan dan pembaruan, mengurangi pekerjaan manual dan meningkatkan keandalan sistem. Integrasi ini mempercepat alur kerja keseluruhan, memastikan SIPLAH beroperasi secara efisien dan aman sebagai platform untuk manajemen rantai pasokan pendidikan.",
   },
