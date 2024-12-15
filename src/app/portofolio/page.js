@@ -4,7 +4,7 @@ import PageLayout from "../components/PageLayout";
 import { portfolioData } from "./dataporto";
 import PortfolioItem from "../components/PortoItems";
 
-
+    
 
 export default function Portfolio() {
   const ITEMS_PER_PAGE = 6;
