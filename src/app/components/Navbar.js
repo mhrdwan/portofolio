@@ -84,10 +84,10 @@ function Navbar() {
 
                         </div>
                         <div className='mt-10 space-y-2   flex flex-col w-full '>
-                            <button className='px-16 py-2 mx-auto font-semibold transition-all duration-75 bg-teal-400 rounded-full dark:text-white hover:bg-teal-800 hover:text-white'>
+                            <button onClick={() => window.open('https://wa.me/6281221871961', '_blank')} className='px-16 py-2 mx-auto font-semibold transition-all duration-75 bg-teal-400 rounded-full dark:text-white hover:bg-teal-800 hover:text-white'>
                                 Hire Me!
                             </button>
-                            <a className='flex items-center  justify-center px-12 py-2 mx-auto font-semibold text-white transition-all duration-75 rounded-full bg-zinc-700 hover:bg-teal-800 hover:text-white'>
+                            <a  onClick={() => window.open('/Mohamad_Hasyim_Ridwan_FullStack_Developer_CV.pdf', '_blank')}  className='hover:cursor-pointer flex items-center  justify-center px-12 py-2 mx-auto font-semibold text-white transition-all duration-75 rounded-full bg-zinc-700 hover:bg-teal-800 hover:text-white'>
                                 Download CV
                             </a>
                         </div>

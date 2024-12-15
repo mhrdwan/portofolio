@@ -31,7 +31,7 @@ function SisiKiri() {
                 <button  onClick={() => window.open('https://wa.me/6281221871961', '_blank')} className=' px-10 py-2 justify-center flex font-semibold transition-all duration-75 bg-teal-400 rounded-full dark:text-white hover:bg-teal-800 hover:text-white'>
                     Hire Me!
                 </button>
-                <a className=' px-8 py-2 font-semibold text-white transition-all duration-75 rounded-full bg-zinc-700 hover:bg-teal-800 hover:text-white'>Download CV</a>
+                <a  onClick={() => window.open('/Mohamad_Hasyim_Ridwan_FullStack_Developer_CV.pdf', '_blank')}  className='hover:cursor-pointer px-8 py-2 font-semibold text-white transition-all duration-75 rounded-full bg-zinc-700 hover:bg-teal-800 hover:text-white'>Download CV</a>
             </div>
         </div>
     )
