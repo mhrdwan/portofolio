@@ -77,7 +77,7 @@ const PortfolioItem = ({ project }) => {
         whileHover={{ y: -5 }}
         transition={{ duration: 0.2 }}
       >
-        <div className="rounded-lg shadow-md aspect-[4/3] overflow-hidden">
+        <div className="rounded-lg shadow-md overflow-hidden w-full h-48 sm:h-52 md:h-56">
           <Image
             className="rounded-lg shadow-md object-cover w-full h-full"
             height={400}
@@ -93,11 +93,11 @@ const PortfolioItem = ({ project }) => {
           </h1>
           {project.link ? (
             <a
-            className="flex mt-5 items-center gap-1 text-xs hover:text-teal-300 text-white group w-full"
-            href={project.link}
-            target="_blank"
-            onClick={(e) => e.stopPropagation()}
-            title={project.linkText}
+              className="flex mt-5 items-center gap-1 text-xs hover:text-teal-300 text-white group w-full"
+              href={project.link}
+              target="_blank"
+              onClick={(e) => e.stopPropagation()}
+              title={project.linkText}
             >
               <svg
                 className="h-3 w-3"
@@ -185,7 +185,7 @@ const PortfolioItem = ({ project }) => {
                   duration: 0.3,
                 },
               }}
-              className="relative w-full max-w-4xl bg-white dark:bg-zinc-900 rounded-lg shadow-lg overflow-hidden"
+              className="relative w-[95%] sm:w-[85%] lg:max-w-3xl mx-auto bg-white dark:bg-zinc-900 rounded-lg shadow-lg overflow-hidden my-4"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close button */}
@@ -331,39 +331,39 @@ const PortfolioItem = ({ project }) => {
                   )}
 
                   {/* Link */}
-                    {project.link && (
-                        <motion.div
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.9 }}
-                        className="pt-4"
+                  {project.link && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.9 }}
+                      className="pt-4"
+                    >
+                      <motion.a
+                        whileHover={{ scale: 1.05 }}
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600"
+                      >
+                        Kunjungi Project
+                        <svg
+                          className="h-4 w-4"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         >
-                        <motion.a
-                            whileHover={{ scale: 1.05 }}
-                            href={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-4 py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600"
-                        >
-                            Kunjungi Project
-                            <svg
-                            className="h-4 w-4"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            >
-                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-                            </svg>
-                        </motion.a>
-                        </motion.div>
-                    )}
+                          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                        </svg>
+                      </motion.a>
+                    </motion.div>
+                  )}
                 </div>
               </motion.div>
             </motion.div>
