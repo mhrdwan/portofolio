@@ -107,7 +107,7 @@ function Navbar() {
                     <a className='font-bold justify-centerflex hidden md:block dark:text-teal-300 text-black'>Mohamad Hasyim Ridwan</a>
                 </motion.nav>
             </div>
-            <motion.nav
+            {/* <motion.nav
                 variants={{
                     visible: { y: 0 },
                     hidden: { y: "-250%" }
@@ -125,7 +125,7 @@ function Navbar() {
                         setTheme("dark")
                     }}>Dark</button>
                 </div>
-            </motion.nav>
+            </motion.nav> */}
             <motion.nav
                 variants={{
                     visible: { y: 0 },
