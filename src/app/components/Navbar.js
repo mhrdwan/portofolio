@@ -24,7 +24,7 @@ function Navbar() {
         }
     })
 
-    const { theme, setTheme } = useTheme()
+    const { theme, setTheme } = useTheme('dark')
     const [mounted, setMounted] = useState(false);
     const NamaHalaman = usePathname();
     const [scales, setScale] = useState("scale-0")
