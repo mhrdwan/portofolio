@@ -5,6 +5,7 @@ import SisiKiri from './SisiKiri';
 import { motion } from 'framer-motion';
 
 const PageLayout = ({ children, showSideBar = true }) => {
+  localStorage.setItem('theme','dark')
   return (
     <main className='px-6 pt-10 lg:pt-0 lg:px-32'>
       <Navbar />
