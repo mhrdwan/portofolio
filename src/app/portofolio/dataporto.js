@@ -15,6 +15,11 @@ import siplahApp4 from "../../../public/IMG/siplahapp4.jpg";
 import siplahApp5 from "../../../public/IMG/siplahapp5.jpg";
 import siplahApp6 from "../../../public/IMG/siplahapp6.jpg";
 import siplahsatdik from "../../../public/IMG/siplah-satdik.png";
+import katarasaMockUp from "../../../public/IMG/katarasa/mockup-katras-app.jpeg";
+import katras1 from "../../../public/IMG/katarasa/Screenshot_1737284977.png";
+import katras2 from "../../../public/IMG/katarasa/Screenshot_1737285039.png";
+import katras3 from "../../../public/IMG/katarasa/Screenshot_1737285430.png";
+import katras4 from "../../../public/IMG/katarasa/WhatsApp Image 2025-01-21 at 08.58.31.jpeg";
 import siplahSatdikdetail from "../../../public/IMG/siplahSatdikdetail.png";
 import race from "../../../public/IMG/rajaCepat.png";
 import race2 from "../../../public/IMG/rajaCepat2.png";
@@ -34,6 +39,22 @@ import jajaId from "../../../public/IMG/jajaid.png";
 import jajaId2 from "../../../public/IMG/jajaid2.png";
 
 export const portfolioData = [
+  {
+    title: "Katarasa App",
+    image: katarasaMockUp,
+    images: [katras1, katras2, katras3, katras4],
+    link: "https://siplah.eurekabookhouse.co.id/satdik/",
+    linkText: "Private",
+    technologies: ["Flutter", "Express.js", "Node.js"],
+    categories: ["DevOps", "Mobile", "Project"],
+    description: `Kopi Kata & Rasa
+
+Kata & Rasa Hadir dalam konsep kedai kopi dan teh, secangkir kafein mampu membangkitkan inspirasi, memori, dan daya kreasi kamu. Kata & Rasa menjadi tempat bagi pengunjungnya untuk mengembangkan imajinasi kreatif yang menghasilkan narasi, puisi, bahkan gambar yang mengandung banyak makna.
+
+
+Sedia Kata untuk kesatuan Rasa. Kata & Rasa tersaji sebagai bagian dari komunitas pecinta kopi yang terus menghargai, mengedukasi, dan mengeksplorasi kenikmatan dari sajian kopi. Kata & Rasa juga menghadirkan ragam varian kue pastry seperti Croissant, Danish, dan Cromboloni.`,
+    features: ["Membuat Apps Katarasa", "Deploy Backend"],
+  },
   {
     title: "SIPLAH EUREKA | Belanja keperluan sekolah praktis dan mudah",
     image: siplahsatdik,
