@@ -89,6 +89,9 @@ function IsiAbout() {
                 Typescript
               </button>
               <button className="text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 ">
+                Flutter
+              </button>
+              <button className="text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 ">
                 Node JS
               </button>
               <button className="text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 ">
@@ -120,7 +123,7 @@ function IsiAbout() {
               </button>
             </div>
 
-            <h1 className="text-lg mt-4 font-bold justify-center md:justify-start flex hover:text-teal-300 dark:hover:text-teal-300 text-black dark:text-white mb-3">
+            {/* <h1 className="text-lg mt-4 font-bold justify-center md:justify-start flex hover:text-teal-300 dark:hover:text-teal-300 text-black dark:text-white mb-3">
               Style
             </h1>
             <div className="flex flex-wrap  gap-4 ">
@@ -133,7 +136,7 @@ function IsiAbout() {
               <button className="text-xs px-6 py-2  text-white rounded-full bg-zinc-700 dark:bg-teal-700 dark:hover:bg-teal-400 hover:bg-teal-400 ">
                 Ant Design{" "}
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
