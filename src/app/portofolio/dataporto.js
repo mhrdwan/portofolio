@@ -60,7 +60,7 @@ export const portfolioData = [
       "Halaman detail podcast dengan animasi shared element",
       "Pemutar podcast dengan dukungan playback di latar belakang",
       "Kontrol mini player di bagian bawah aplikasi",
-      "Lompatan maju 10 detik saat mendengarkan",
+      "Skip 10 detik saat mendengarkan",
       "Dukungan download podcast untuk pemutaran offline",
       "Optimisasi list dengan pagination",
     ],
