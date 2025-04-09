@@ -52,13 +52,18 @@ export const portfolioData = [
     linkText: "https://github.com/mhrdwan/hyge-podcast-ridwan",
     technologies: ["React Native"],
     categories: ["Mobile", "Project"],
-    description: `Hyge Podcast
-
-Kata & Rasa Hadir dalam konsep kedai kopi dan teh, secangkir kafein mampu membangkitkan inspirasi, memori, dan daya kreasi kamu. Kata & Rasa menjadi tempat bagi pengunjungnya untuk mengembangkan imajinasi kreatif yang menghasilkan narasi, puisi, bahkan gambar yang mengandung banyak makna.
-
-
-Sedia Kata untuk kesatuan Rasa. Kata & Rasa tersaji sebagai bagian dari komunitas pecinta kopi yang terus menghargai, mengedukasi, dan mengeksplorasi kenikmatan dari sajian kopi. Kata & Rasa juga menghadirkan ragam varian kue pastry seperti Croissant, Danish, dan Cromboloni.`,
-    features: ["Membuat Apps Hyge - Podcast"],
+    description: `Hyge adalah aplikasi mobile Podcast berbasis React Native yang dikembangkan oleh saya. Aplikasi ini memungkinkan pengguna untuk mencari, memutar, menyukai, dan mengunduh podcast favorit mereka. Desain aplikasi mengacu pada Figma yang telah disediakan, dengan fokus pada tampilan yang pixel-perfect, performa tinggi, dan pengalaman pengguna yang mulus, termasuk animasi transisi dan pemutar audio yang mendukung playback di latar belakang.`,
+    features: [
+      "Pencarian podcast dengan API",
+      "Mode Gelap dan Terang",
+      "Tandai podcast sebagai favorit",
+      "Halaman detail podcast dengan animasi shared element",
+      "Pemutar podcast dengan dukungan playback di latar belakang",
+      "Kontrol mini player di bagian bawah aplikasi",
+      "Lompatan maju 10 detik saat mendengarkan",
+      "Dukungan download podcast untuk pemutaran offline",
+      "Optimisasi list dengan pagination",
+    ],
   },
   {
     title: "Katarasa App",
