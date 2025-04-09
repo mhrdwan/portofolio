@@ -15,6 +15,11 @@ import siplahApp4 from "../../../public/IMG/siplahapp4.jpg";
 import siplahApp5 from "../../../public/IMG/siplahapp5.jpg";
 import siplahApp6 from "../../../public/IMG/siplahapp6.jpg";
 import siplahsatdik from "../../../public/IMG/siplah-satdik.png";
+import hygPodcast from "../../../public/IMG/hyge-podcast/moc-hyge-podcast.png";
+import hygPodcast1 from "../../../public/IMG/hyge-podcast/1.jpg";
+import hygPodcast2 from "../../../public/IMG/hyge-podcast/2.jpg";
+import hygPodcast3 from "../../../public/IMG/hyge-podcast/3.jpg";
+import hygPodcast4 from "../../../public/IMG/hyge-podcast/4.jpg";
 import katarasaMockUp from "../../../public/IMG/katarasa/mockup-katras-app.jpeg";
 import katras1 from "../../../public/IMG/katarasa/Screenshot_1737284977.png";
 import katras2 from "../../../public/IMG/katarasa/Screenshot_1737285039.png";
@@ -39,6 +44,22 @@ import jajaId from "../../../public/IMG/jajaid.png";
 import jajaId2 from "../../../public/IMG/jajaid2.png";
 
 export const portfolioData = [
+  {
+    title: "Hyge - Podcast App",
+    image: hygPodcast,
+    images: [hygPodcast1, hygPodcast2, hygPodcast3, hygPodcast4, hygPodcast],
+    link: "https://github.com/mhrdwan/hyge-podcast-ridwan",
+    linkText: "https://github.com/mhrdwan/hyge-podcast-ridwan",
+    technologies: ["React Native"],
+    categories: ["Mobile", "Project"],
+    description: `Hyge Podcast
+
+Kata & Rasa Hadir dalam konsep kedai kopi dan teh, secangkir kafein mampu membangkitkan inspirasi, memori, dan daya kreasi kamu. Kata & Rasa menjadi tempat bagi pengunjungnya untuk mengembangkan imajinasi kreatif yang menghasilkan narasi, puisi, bahkan gambar yang mengandung banyak makna.
+
+
+Sedia Kata untuk kesatuan Rasa. Kata & Rasa tersaji sebagai bagian dari komunitas pecinta kopi yang terus menghargai, mengedukasi, dan mengeksplorasi kenikmatan dari sajian kopi. Kata & Rasa juga menghadirkan ragam varian kue pastry seperti Croissant, Danish, dan Cromboloni.`,
+    features: ["Membuat Apps Hyge - Podcast"],
+  },
   {
     title: "Katarasa App",
     image: katarasaMockUp,
