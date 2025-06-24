@@ -1,0 +1,53 @@
+# Robots.txt for Mohamad Hasyim Ridwan Portfolio
+# Domain: mhridwan.com
+
+User-agent: *
+Allow: /
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.well-known/
+Disallow: /api/private/
+
+# Allow important files
+Allow: /sitemap.xml
+Allow: /favicon.ico
+Allow: /robots.txt
+
+# Sitemap location
+Sitemap: https://mhridwan.com/sitemap.xml
+
+# Crawl delay (optional, in seconds)
+Crawl-delay: 1 

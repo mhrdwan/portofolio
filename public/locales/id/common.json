@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "about": "Tentang",
+    "portfolio": "Portofolio",
+    "blog": "Blog",
+    "menu": "Menu",
+    "navigation": "Navigasi"
+  },
+  "profile": {
+    "greeting": "Hi! Saya",
+    "name": "Mohamad Hasyim Ridwan",
+    "role": "Full Stack Developer",
+    "email": "mh.ridwan7b@gmail.com",
+    "phone": "+62 (812) 21871961",
+    "hireMe": "Rekrut Saya!",
+    "downloadCV": "Unduh CV"
+  },
+  "home": {
+    "title": "Berbagai hal yang telah saya buat untuk meninggalkan jejak di dunia programming.",
+    "subtitle": "Saya telah belajar dan bekerja pada beberapa proyek selama {months} bulan terhitung sampai portofolio ini di update tanggal {date}, daftar-daftar ini yang ingin saya tampilkan.",
+    "buildWith": "Dibuat dengan ❤️ oleh Mohamad Hasyim Ridwan"
+  },
+  "portfolio": {
+    "title": "Berbagai hal yang telah saya buat untuk meninggalkan jejak di dunia programming.",
+    "subtitle": "Saya telah belajar dan bekerja pada beberapa proyek selama {months} bulan terhitung sampai portofolio ini di update tanggal {date}, daftar-daftar ini yang ingin saya tampilkan.",
+    "categories": {
+      "all": "Semua"
+    },
+    "visitProject": "Kunjungi Project",
+    "private": "Private",
+    "video": "VIDEO",
+    "description": "Deskripsi",
+    "technology": "Teknologi",
+    "features": "Fitur",
+    "noDescription": "Tidak ada deskripsi tersedia"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Artikel dan tulisan tentang pengalaman development",
+    "comingSoon": "Segera hadir...",
+    "description": "Halaman blog sedang dalam pengembangan. Akan segera diisi dengan artikel-artikel menarik tentang pengalaman pengembangan software, tips & tricks, dan insight teknologi terbaru."
+  },
+  "theme": {
+    "light": "Terang",
+    "dark": "Gelap"
+  },
+  "language": {
+    "switchTo": "Ganti ke",
+    "indonesian": "Bahasa Indonesia",
+    "english": "English"
+  },
+  "404": {
+    "title": "404 - Halaman Tidak Ditemukan",
+    "subtitle": "Oops! Halaman yang Anda cari tidak ditemukan.",
+    "description": "Halaman yang Anda coba akses mungkin telah dipindahkan, dihapus, atau tidak pernah ada. Silakan periksa URL atau kembali ke halaman utama.",
+    "backToHome": "Kembali ke Beranda",
+    "orVisit": "Atau kunjungi:",
+    "aboutPage": "Halaman Tentang",
+    "portfolioPage": "Halaman Portofolio"
+  }
+}

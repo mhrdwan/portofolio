@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "about": "About",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "menu": "Menu",
+    "navigation": "Navigation"
+  },
+  "profile": {
+    "greeting": "Hi! I'm",
+    "name": "Mohamad Hasyim Ridwan",
+    "role": "Full Stack Developer",
+    "email": "mh.ridwan7b@gmail.com",
+    "phone": "+62 (812) 21871961",
+    "hireMe": "Hire Me!",
+    "downloadCV": "Download CV"
+  },
+  "home": {
+    "title": "Various things I have created to leave a mark in the programming world.",
+    "subtitle": "I have been learning and working on several projects for {months} months as of this portfolio update on {date}, these are the lists I want to showcase.",
+    "buildWith": "Built with ❤️ by Mohamad Hasyim Ridwan"
+  },
+  "portfolio": {
+    "title": "Various things I have created to leave a mark in the programming world.",
+    "subtitle": "I have been learning and working on several projects for {months} months as of this portfolio update on {date}, these are the lists I want to showcase.",
+    "categories": {
+      "all": "All"
+    },
+    "visitProject": "Visit Project",
+    "private": "Private",
+    "video": "VIDEO",
+    "description": "Description",
+    "technology": "Technology",
+    "features": "Features",
+    "noDescription": "No description available"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Articles and writings about development experience",
+    "comingSoon": "Coming soon...",
+    "description": "The blog page is currently under development. Will be filled with interesting articles about software development experience, tips & tricks, and latest technology insights."
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "language": {
+    "switchTo": "Switch to",
+    "indonesian": "Bahasa Indonesia",
+    "english": "English"
+  },
+  "404": {
+    "title": "404 - Page Not Found",
+    "subtitle": "Oops! The page you're looking for doesn't exist.",
+    "description": "The page you're trying to access may have been moved, deleted, or never existed. Please check the URL or return to the homepage.",
+    "backToHome": "Back to Home",
+    "orVisit": "Or visit:",
+    "aboutPage": "About Page",
+    "portfolioPage": "Portfolio Page"
+  }
+}
