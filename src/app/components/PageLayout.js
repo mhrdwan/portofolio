@@ -6,18 +6,21 @@ import { motion } from "framer-motion";
 
 const PageLayout = ({ children, showSideBar = true }) => {
   useEffect(() => {
+    // Force dark mode
     localStorage.setItem("theme", "dark");
+    document.documentElement.classList.add("dark");
+    document.documentElement.classList.remove("light");
   }, []);
 
   return (
-    <main className="px-6 pt-10 lg:pt-0 lg:px-32">
+    <main className="px-6 pt-10 lg:pt-0 lg:px-32 bg-black min-h-screen text-white">
       <Navbar />
       <div className="text-white flex justify-center gap-4 mt-4">
         {showSideBar && (
           <Suspense
             fallback={
               <div className="w-2/12 hidden md:block">
-                <div className="animate-pulse bg-gray-200 dark:bg-gray-700 rounded-lg h-96"></div>
+                <div className="animate-pulse bg-gray-700 rounded-lg h-96"></div>
               </div>
             }
           >
@@ -34,7 +37,7 @@ const PageLayout = ({ children, showSideBar = true }) => {
         <Suspense
           fallback={
             <div className="lg:w-5/7 w-full">
-              <div className="animate-pulse bg-gray-200 dark:bg-gray-700 rounded-lg h-96"></div>
+              <div className="animate-pulse bg-gray-700 rounded-lg h-96"></div>
             </div>
           }
         >

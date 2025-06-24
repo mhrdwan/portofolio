@@ -8,6 +8,9 @@ export default function Providers({ children }) {
 
   useEffect(() => {
     setMounted(true);
+    // Force dark mode on load
+    localStorage.setItem("theme", "dark");
+    document.documentElement.classList.add("dark");
   }, []);
 
   if (!mountee) {
@@ -15,7 +18,12 @@ export default function Providers({ children }) {
   }
 
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="dark"
+      enableSystem={false}
+      forcedTheme="dark"
+    >
       <ClientWrapper>{children}</ClientWrapper>
     </ThemeProvider>
   );

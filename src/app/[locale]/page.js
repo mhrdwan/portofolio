@@ -10,7 +10,7 @@ export default function Home({ params }) {
     return (
       <PageLayout>
         <IsiAbout />
-        <p className="text-black mt-36 flex justify-center dark:text-white">
+        <p className="text-white mt-36 flex justify-center">
           Build With ❤️ By Mohamad Hasyim Ridwan
         </p>
       </PageLayout>
@@ -20,7 +20,7 @@ export default function Home({ params }) {
   return (
     <PageLayout>
       <IsiAbout />
-      {/* <p className="text-black mt-36 flex justify-center dark:text-white">
+      {/* <p className="text-white mt-36 flex justify-center">
         {t("home.buildWith")}
       </p> */}
     </PageLayout>

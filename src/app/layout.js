@@ -124,7 +124,7 @@ export default function RootLayout({ children }) {
 
         {/* Performance hints */}
         <meta name="theme-color" content="#14b8a6" />
-        <meta name="color-scheme" content="light dark" />
+        <meta name="color-scheme" content="dark" />
 
         {/* Structured Data for SEO */}
         <script

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function SisiKiri() {
   return (
-    <div className="hidden  lg:block lg:p-4 lg:from-zinc-100 lg:to-transparent lg:border-zinc-300 border-0 lg:border border-b-0 rounded-lg lg:bg-gradient-to-br lg:dark:from-zinc-900 lg:dark:to-transparent dark:border-zinc-800 ">
+    <div className="hidden lg:block lg:p-4 lg:from-zinc-900 lg:to-transparent lg:border-zinc-800 border-0 lg:border border-b-0 rounded-lg lg:bg-gradient-to-br bg-zinc-900/50">
       <div className="relative flex justify-center mx-4 my-2">
         <Image
           src={gambarkanan}
@@ -24,8 +24,8 @@ function SisiKiri() {
         />
       </div>
       <div className="my-4 text-center">
-        <h1 className="text-2xl font-bold tracking-wider text-center dark:text-white text-black hover:text-teal-300">
-          <span className="text-teal-300  hover:text-white">Hi!</span> I'm
+        <h1 className="text-2xl font-bold tracking-wider text-center text-white hover:text-teal-300">
+          <span className="text-teal-300 hover:text-white">Hi!</span> I'm
           Mohamad Hasyim Ridwan
         </h1>
         <p className="font-light text-teal-300 animate-typing f ">
@@ -222,7 +222,7 @@ function SisiKiri() {
           href="https://wa.me/6281221871961"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-10 py-2 justify-center flex font-semibold transition-all duration-75 bg-teal-400 rounded-full dark:text-white hover:bg-teal-800 hover:text-white"
+          className="px-10 py-2 justify-center flex font-semibold transition-all duration-75 bg-teal-400 rounded-full text-white hover:bg-teal-800 hover:text-white"
         >
           Hire Me!
         </a>

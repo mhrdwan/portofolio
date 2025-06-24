@@ -21,13 +21,13 @@ const LanguageSwitcher = () => {
       animate={{ opacity: 1, y: 0 }}
       className="relative"
     >
-      <div className="flex items-center gap-2 p-2 rounded-lg bg-gray-100 dark:bg-zinc-800">
+      <div className="flex items-center gap-2 p-2 rounded-lg bg-zinc-800">
         <button
           onClick={() => switchLanguage("id")}
           className={`px-3 py-1 text-xs rounded-md transition-all duration-200 ${
             locale === "id"
               ? "bg-teal-500 text-white shadow-sm"
-              : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200"
+              : "text-gray-400 hover:text-gray-200"
           }`}
         >
           🇮🇩 ID
@@ -37,7 +37,7 @@ const LanguageSwitcher = () => {
           className={`px-3 py-1 text-xs rounded-md transition-all duration-200 ${
             locale === "en"
               ? "bg-teal-500 text-white shadow-sm"
-              : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200"
+              : "text-gray-400 hover:text-gray-200"
           }`}
         >
           🇺🇸 EN

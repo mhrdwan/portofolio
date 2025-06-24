@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Force dark mode globally */
+:root {
+  color-scheme: dark;
+}
+
+html {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Ensure all elements follow dark theme */
+* {
+  border-color: #374151;
+}
+
+/* Override any light mode classes */
+.light,
+html.light,
+html.light body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
