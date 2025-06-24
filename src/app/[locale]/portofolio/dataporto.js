@@ -1,5 +1,50 @@
 export const portfolioData = [
   {
+    title: "Bot WhatsApp API & Monitoring Dashboard",
+    image: "/IMG/botWaMasdis/botWaMasdis.png",
+    images: [
+      "/IMG/botWaMasdis/botWaMasdis.png",
+      "/IMG/botWaMasdis/botWaMasdis1.png",
+      "/IMG/botWaMasdis/botWaMasdis2.png",
+    ],
+    link: "Private",
+    linkText: "Private - WhatsApp Bot API Service",
+    technologies: [
+      "TypeScript",
+      "Node.js",
+      "Baileys",
+      "WhatsApp API",
+      "Dashboard",
+    ],
+    categories: ["Bot"],
+    description: {
+      id: `Bot WhatsApp API yang saya kembangkan menggunakan TypeScript dan Node.js Baileys untuk menyediakan layanan API WhatsApp yang powerful dan dapat dimonitor secara real-time. Project ini dilengkapi dengan dashboard monitoring yang memungkinkan admin untuk memantau aktivitas bot, mengelola pesan, dan melihat statistik penggunaan secara komprehensif. Sistem ini dirancang untuk memberikan kontrol penuh terhadap operasional bot WhatsApp dengan interface yang user-friendly dan monitoring yang detail.`,
+      en: `WhatsApp Bot API that I developed using TypeScript and Node.js Baileys to provide a powerful WhatsApp API service that can be monitored in real-time. This project is equipped with a monitoring dashboard that allows admins to monitor bot activities, manage messages, and view usage statistics comprehensively. This system is designed to provide full control over WhatsApp bot operations with a user-friendly interface and detailed monitoring.`,
+    },
+    features: {
+      id: [
+        "API WhatsApp dengan TypeScript",
+        "Node.js Baileys integration",
+        "Dashboard monitoring real-time",
+        "Manajemen pesan otomatis",
+        "Statistik penggunaan lengkap",
+        "Interface admin yang intuitif",
+        "Monitoring aktivitas bot",
+        "Sistem logging komprehensif",
+      ],
+      en: [
+        "WhatsApp API with TypeScript",
+        "Node.js Baileys integration",
+        "Real-time monitoring dashboard",
+        "Automatic message management",
+        "Complete usage statistics",
+        "Intuitive admin interface",
+        "Bot activity monitoring",
+        "Comprehensive logging system",
+      ],
+    },
+  },
+  {
     title: "Web3 Donation Platform",
     image: "/IMG/web3/web3 donation.png",
     images: [
@@ -18,7 +63,7 @@ export const portfolioData = [
       "React.js",
       "Smart Contract",
     ],
-    categories: ["Web3", "Blockchain", "Project"],
+    categories: ["Web3"],
     description: {
       id: `Platform donasi berbasis blockchain yang saya kembangkan untuk menciptakan sistem donasi yang adil dan transparan bagi streamer. Platform ini memungkinkan donasi dalam bentuk cryptocurrency yang langsung masuk ke wallet pribadi streamer tanpa potongan, tanpa delay, dan tanpa perantara. Tujuan saya sederhana: membuat sistem donasi yang adil, transparan, dan benar-benar dimiliki oleh streamer itu sendiri. Karena saya percaya, hubungan antara streamer dan komunitasnya harus bersih dari campur tangan pihak ketiga yang mengambil bagian dari dukungan itu. Dengan blockchain, setiap transaksi bisa diverifikasi secara publik. Tanpa sistem payout yang rumit, tanpa harus "nunggu cair". Donasi masuk, streamer langsung terima.`,
       en: `A blockchain-based donation platform that I developed to create a fair and transparent donation system for streamers. This platform enables cryptocurrency donations that go directly to streamers' personal wallets without cuts, delays, or intermediaries. My goal is simple: to create a donation system that is fair, transparent, and truly owned by the streamer themselves. Because I believe the relationship between streamers and their community should be free from third-party interference that takes a portion of that support. With blockchain, every transaction can be verified publicly. No complicated payout systems, no need to "wait for processing". Donations come in, streamers receive them instantly.`,
@@ -67,7 +112,7 @@ export const portfolioData = [
       "QRIS",
       "Mobile Development",
     ],
-    categories: ["Mobile", "FinTech", "Internal", "Project"],
+    categories: ["Mobile"],
     description: {
       id: `JajaPay adalah platform dompet digital internal perusahaan yang saya kembangkan menggunakan Flutter untuk frontend mobile dan NestJS untuk backend. Platform ini memungkinkan karyawan perusahaan untuk melakukan transaksi digital dengan mudah dan aman. JajaPay dilengkapi dengan fitur pembayaran QRIS yang terintegrasi dengan payment gateway, memungkinkan pengguna untuk melakukan pembayaran dengan scan QR code. Sistem ini dirancang khusus untuk kebutuhan internal perusahaan dengan fokus pada keamanan, kemudahan penggunaan, dan efisiensi transaksi keuangan internal.`,
       en: `JajaPay is an internal company digital wallet platform that I developed using Flutter for the mobile frontend and NestJS for the backend. This platform enables company employees to conduct digital transactions easily and securely. JajaPay is equipped with QRIS payment features integrated with payment gateway, allowing users to make payments by scanning QR codes. This system is specifically designed for internal company needs with a focus on security, ease of use, and efficiency of internal financial transactions.`,
@@ -115,7 +160,7 @@ export const portfolioData = [
       "Payment Gateway",
       "Banking Integration",
     ],
-    categories: ["Web App", "FinTech", "Management", "Project"],
+    categories: ["Web App"],
     description: {
       id: `SIPLAH Mitra adalah platform manajemen data dan operasional keuangan yang saya kembangkan menggunakan Vite untuk frontend dan Express.js untuk backend. Platform ini dirancang khusus untuk mengelola berbagai aspek operasional bisnis termasuk perbaikan data, manajemen payment virtual account, pengiriman dana ke bank, monitoring detail orderan, dan proses rekonsiliasi keuangan. Sistem ini memberikan kontrol penuh terhadap operasional keuangan dengan interface yang user-friendly dan proses yang terotomatisasi untuk meningkatkan efisiensi kerja tim operasional.`,
       en: `SIPLAH Mitra is a data management and financial operations platform that I developed using Vite for the frontend and Express.js for the backend. This platform is specifically designed to manage various aspects of business operations including data correction, virtual account payment management, fund transfers to banks, order detail monitoring, and financial reconciliation processes. This system provides full control over financial operations with a user-friendly interface and automated processes to improve operational team efficiency.`,
@@ -157,7 +202,7 @@ export const portfolioData = [
     link: "https://github.com/mhrdwan/hyge-podcast-ridwan",
     linkText: "https://github.com/mhrdwan/hyge-podcast-ridwan",
     technologies: ["React Native"],
-    categories: ["Mobile", "Project"],
+    categories: ["Mobile"],
     description: {
       id: `Hyge adalah aplikasi mobile Podcast berbasis React Native yang dikembangkan oleh saya. Aplikasi ini memungkinkan pengguna untuk mencari, memutar, menyukai, dan mengunduh podcast favorit mereka. Desain aplikasi mengacu pada Figma yang telah disediakan, dengan fokus pada tampilan yang pixel-perfect, performa tinggi, dan pengalaman pengguna yang mulus, termasuk animasi transisi dan pemutar audio yang mendukung playback di latar belakang.`,
       en: `Hyge is a React Native-based mobile Podcast application that I developed. This application allows users to search, play, like, and download their favorite podcasts. The app design refers to the provided Figma, focusing on pixel-perfect appearance, high performance, and smooth user experience, including transition animations and an audio player that supports background playback.`,
@@ -199,7 +244,7 @@ export const portfolioData = [
     link: "https://siplah.eurekabookhouse.co.id/satdik/",
     linkText: "Private",
     technologies: ["Flutter", "Express.js", "Node.js"],
-    categories: ["DevOps", "Mobile", "Project"],
+    categories: ["Mobile"],
     description: {
       id: `Kopi Kata & Rasa
 
@@ -230,7 +275,7 @@ Providing Words for the unity of Taste. Words & Taste is served as part of the c
       "Payment Gateway",
       "DevOps",
     ],
-    categories: ["Bot", "Crypto", "FinTech", "Project"],
+    categories: ["Bot"],
     description: {
       id: `Eceran Bot adalah bot Telegram yang powerful dan user-friendly yang memungkinkan pembelian cryptocurrency stabil menggunakan Rupiah Indonesia (IDR) dengan mudah. Terintegrasi dengan payment gateway Mitrans, bot ini memastikan transaksi yang aman dan instan, membuat investasi crypto lebih mudah diakses. Dengan Eceran Bot, pengguna dapat membeli aset crypto stabil langsung via Telegram, membayar dengan mudah menggunakan payment gateway Mitrans, dan menikmati proses yang cepat, aman, dan otomatis. Sempurna untuk para crypto enthusiast yang mencari cara mudah untuk mendapatkan stablecoin.`,
       en: `Eceran Bot is a powerful and user-friendly Telegram bot that enables seamless purchasing of stable cryptocurrencies using Indonesian Rupiah (IDR). Integrated with the Mitrans payment gateway, this bot ensures secure and instant transactions, making crypto investments more accessible. With Eceran Bot, users can buy stable crypto assets directly via Telegram, pay easily using Mitrans payment gateway, and enjoy a fast, secure, and automated process. Perfect for crypto enthusiasts looking for a hassle-free way to acquire stablecoins.`,
@@ -272,7 +317,7 @@ Providing Words for the unity of Taste. Words & Taste is served as part of the c
     link: "https://siplah.eurekabookhouse.co.id/satdik/",
     linkText: "https://siplah.eurekabookhouse.co.id/satdik/",
     technologies: ["React Native", "Express.js", "Node.js"],
-    categories: ["Mobile", "Project", "DevOps"],
+    categories: ["Mobile"],
     description: {
       id: "Aplikasi mobile SIPLAH EUREKA yang saya kembangkan menggunakan React Native. Aplikasi ini menjadi perpanjangan dari platform web dengan fitur-fitur yang dioptimalkan untuk perangkat mobile, memungkinkan pengguna melakukan pembelian keperluan sekolah dengan lebih mudah dan praktis dari smartphone mereka.",
       en: "SIPLAH EUREKA mobile application that I developed using React Native. This app is an extension of the web platform with features optimized for mobile devices, allowing users to purchase school supplies more easily and practically from their smartphones.",
@@ -303,7 +348,7 @@ Providing Words for the unity of Taste. Words & Taste is served as part of the c
     link: "https://tracking.eurekabookhouse.co.id/",
     linkText: "https://tracking.eurekabookhouse.co.id/",
     technologies: ["React JS", "Express.js", "Node.js", "TailWind"],
-    categories: ["Project", "Web App", "Api"],
+    categories: ["Web App"],
     description: {
       id: "Sistem tracking terintegrasi untuk memantau status pengiriman produk Eureka. Platform ini memberikan transparansi penuh kepada pelanggan mengenai perjalanan pesanan mereka dengan update real-time dan interface yang user-friendly.",
       en: "Integrated tracking system to monitor Eureka product delivery status. This platform provides full transparency to customers regarding their order journey with real-time updates and user-friendly interface.",
@@ -336,7 +381,7 @@ Providing Words for the unity of Taste. Words & Taste is served as part of the c
     link: "https://play.google.com/store/apps/details?id=com.rajacepat_app",
     linkText: "https://play.google.com/store/apps/details?id=com.rajacepat_app",
     technologies: ["React Native", "Express.js", "Node.js"],
-    categories: ["Mobile", "Project", "DevOps"],
+    categories: ["Mobile"],
     description: {
       id: "RajaCepat adalah aplikasi mobile e-commerce untuk jasa pengiriman cepat yang saya kembangkan. Aplikasi ini memungkinkan pengguna untuk memesan layanan kurir dengan mudah, melacak pengiriman, dan mengelola transaksi pembayaran secara digital.",
       en: "RajaCepat is a mobile e-commerce application for fast delivery services that I developed. This application allows users to easily order courier services, track deliveries, and manage payment transactions digitally.",
@@ -367,7 +412,7 @@ Providing Words for the unity of Taste. Words & Taste is served as part of the c
     link: "https://batugin.eurekabookhouse.co.id/",
     linkText: "https://batugin.eurekabookhouse.co.id/",
     technologies: ["React JS", "Express.js", "Node.js", "TailWind"],
-    categories: ["Project", "Web App"],
+    categories: ["Web App"],
     description: {
       id: "Platform e-commerce untuk penjualan produk Batu Gin dengan desain yang elegan dan modern. Website ini dilengkapi dengan sistem manajemen produk, keranjang belanja, dan integrasi pembayaran yang secure.",
       en: "E-commerce platform for Batu Gin product sales with elegant and modern design. This website is equipped with product management system, shopping cart, and secure payment integration.",
@@ -396,7 +441,7 @@ Providing Words for the unity of Taste. Words & Taste is served as part of the c
     link: "https://logistik.eurekabookhouse.co.id/",
     linkText: "https://logistik.eurekabookhouse.co.id/",
     technologies: ["React JS", "Express.js", "Node.js", "TailWind"],
-    categories: ["Project", "Web App", "Api"],
+    categories: ["Web App"],
     description: {
       id: "Sistem manajemen logistik komprehensif untuk mengoptimalkan rantai pasokan Eureka. Platform ini mengelola inventory, tracking pengiriman, dan koordinasi antar gudang dengan efisiensi tinggi.",
       en: "Comprehensive logistics management system to optimize Eureka's supply chain. This platform manages inventory, delivery tracking, and warehouse coordination with high efficiency.",
@@ -425,7 +470,7 @@ Providing Words for the unity of Taste. Words & Taste is served as part of the c
     link: "https://wa.me/6281221871961",
     linkText: "Private",
     technologies: ["Node.js", "WhatsApp API", "Express.js"],
-    categories: ["Bot", "Api", "Project"],
+    categories: ["Bot"],
     description: {
       id: "Bot WhatsApp otomatis untuk Master Diskon yang dapat membantu customer service dalam menangani pertanyaan pelanggan, memberikan informasi produk, dan memproses pesanan secara otomatis 24/7.",
       en: "Automatic WhatsApp bot for Master Diskon that can help customer service handle customer inquiries, provide product information, and process orders automatically 24/7.",
@@ -454,7 +499,7 @@ Providing Words for the unity of Taste. Words & Taste is served as part of the c
     link: "https://masterdiskon.co.id/",
     linkText: "https://masterdiskon.co.id/",
     technologies: ["React JS", "Express.js", "Node.js", "TailWind"],
-    categories: ["Project", "Web App", "E-commerce"],
+    categories: ["Web App"],
     description: {
       id: "Platform e-commerce Master Diskon yang menyediakan berbagai produk dengan penawaran diskon menarik. Website ini dilengkapi dengan sistem manajemen produk, pembayaran, dan tracking pesanan yang lengkap.",
       en: "Master Diskon e-commerce platform that provides various products with attractive discount offers. This website is equipped with complete product management, payment, and order tracking systems.",
@@ -483,7 +528,7 @@ Providing Words for the unity of Taste. Words & Taste is served as part of the c
     link: "https://jajaauto.id/",
     linkText: "https://jajaauto.id/",
     technologies: ["React JS", "Express.js", "Node.js", "TailWind"],
-    categories: ["Project", "Web App", "Automotive"],
+    categories: ["Web App"],
     description: {
       id: "Website resmi Jaja Auto yang menyediakan layanan otomotif lengkap. Platform ini menampilkan katalog layanan, booking appointment, dan informasi produk automotive dengan desain yang profesional.",
       en: "Official Jaja Auto website providing comprehensive automotive services. This platform displays service catalog, appointment booking, and automotive product information with professional design.",
@@ -512,7 +557,7 @@ Providing Words for the unity of Taste. Words & Taste is served as part of the c
     link: "https://jajaauto.id/",
     linkText: "Private",
     technologies: ["React Native", "Express.js", "Node.js"],
-    categories: ["Mobile", "Project", "Automotive"],
+    categories: ["Mobile"],
     description: {
       id: "Aplikasi mobile JajaID untuk layanan automotive yang memungkinkan pengguna mencari bengkel terdekat, booking service, dan tracking progress perbaikan kendaraan secara real-time.",
       en: "JajaID mobile application for automotive services that allows users to find nearby workshops, book services, and track vehicle repair progress in real-time.",
@@ -541,7 +586,7 @@ Providing Words for the unity of Taste. Words & Taste is served as part of the c
     link: "https://rumahimpian.eurekabookhouse.co.id/",
     linkText: "https://rumahimpian.eurekabookhouse.co.id/",
     technologies: ["React JS", "Express.js", "Node.js", "TailWind"],
-    categories: ["Project", "Web App", "Real Estate"],
+    categories: ["Web App"],
     description: {
       id: "Platform real estate Rumah Impian yang membantu pengguna mencari dan membeli properti impian mereka. Website ini dilengkapi dengan fitur pencarian advanced, virtual tour, dan sistem konsultasi online.",
       en: "Rumah Impian real estate platform that helps users find and buy their dream properties. This website is equipped with advanced search features, virtual tours, and online consultation system.",
@@ -570,7 +615,7 @@ Providing Words for the unity of Taste. Words & Taste is served as part of the c
     link: "https://rajacepat.eurekabookhouse.co.id/",
     linkText: "https://rajacepat.eurekabookhouse.co.id/",
     technologies: ["React JS", "Express.js", "Node.js", "TailWind"],
-    categories: ["Project", "Web App", "Logistics"],
+    categories: ["Web App"],
     description: {
       id: "Website RajaCepat untuk layanan pengiriman ekspres dengan fokus pada kecepatan dan keandalan. Platform ini menyediakan tracking real-time, kalkulasi ongkir, dan manajemen pengiriman yang efisien.",
       en: "RajaCepat website for express delivery services focusing on speed and reliability. This platform provides real-time tracking, shipping cost calculation, and efficient delivery management.",
@@ -599,7 +644,7 @@ Providing Words for the unity of Taste. Words & Taste is served as part of the c
     link: "https://github.com/mhrdwan/cuaca_app_flutter",
     linkText: "https://github.com/mhrdwan/cuaca_app_flutter",
     technologies: ["Flutter", "Weather API", "Dart"],
-    categories: ["Mobile", "API", "Learning"],
+    categories: ["Mobile"],
     description: {
       id: "Aplikasi mobile untuk cek cuaca yang dikembangkan dengan Flutter. Aplikasi ini menampilkan informasi cuaca real-time, prakiraan 7 hari, dan notifikasi cuaca ekstrem dengan interface yang clean dan user-friendly.",
       en: "Mobile weather checking application developed with Flutter. This app displays real-time weather information, 7-day forecasts, and extreme weather notifications with a clean and user-friendly interface.",
@@ -628,7 +673,7 @@ Providing Words for the unity of Taste. Words & Taste is served as part of the c
     link: "https://github.com/mhrdwan/cuaca-app-cli",
     linkText: "https://github.com/mhrdwan/cuaca-app-cli",
     technologies: ["Node.js", "CLI", "Weather API"],
-    categories: ["CLI", "API", "Learning"],
+    categories: ["Tools"],
     description: {
       id: "Aplikasi command line interface untuk cek cuaca yang dibuat dengan Node.js. Tool ini memungkinkan pengguna untuk mendapatkan informasi cuaca langsung dari terminal dengan perintah yang sederhana.",
       en: "Command line interface application for weather checking built with Node.js. This tool allows users to get weather information directly from terminal with simple commands.",
@@ -657,7 +702,7 @@ Providing Words for the unity of Taste. Words & Taste is served as part of the c
     link: "https://github.com/mhrdwan/tiktok-downloader-cli",
     linkText: "https://github.com/mhrdwan/tiktok-downloader-cli",
     technologies: ["Node.js", "CLI", "TikTok API"],
-    categories: ["CLI", "API", "Tools"],
+    categories: ["Tools"],
     description: {
       id: "Command line tool untuk download video TikTok tanpa watermark. Aplikasi ini dibuat dengan Node.js dan memungkinkan pengguna untuk download video TikTok dengan mudah melalui terminal.",
       en: "Command line tool for downloading TikTok videos without watermark. This application is built with Node.js and allows users to easily download TikTok videos through the terminal.",
@@ -686,7 +731,7 @@ Providing Words for the unity of Taste. Words & Taste is served as part of the c
     link: "https://github.com/mhrdwan/api-scraping-berita-cnn",
     linkText: "https://github.com/mhrdwan/api-scraping-berita-cnn",
     technologies: ["Node.js", "Web Scraping", "Express.js", "Cheerio"],
-    categories: ["API", "Scraping", "Backend"],
+    categories: ["API"],
     description: {
       id: "API untuk scraping berita dari CNN Indonesia yang dibuat dengan Node.js dan Cheerio. API ini menyediakan endpoint untuk mendapatkan berita terbaru, kategori berita, dan detail artikel secara real-time.",
       en: "API for scraping news from CNN Indonesia built with Node.js and Cheerio. This API provides endpoints to get latest news, news categories, and article details in real-time.",
@@ -715,7 +760,7 @@ Providing Words for the unity of Taste. Words & Taste is served as part of the c
     link: "https://github.com/mhrdwan/cek-harga-bensin",
     linkText: "https://github.com/mhrdwan/cek-harga-bensin",
     technologies: ["React JS", "API", "TailwindCSS"],
-    categories: ["Web App", "API", "Tools"],
+    categories: ["Tools"],
     description: {
       id: "Aplikasi web untuk cek harga bensin real-time di seluruh Indonesia. Platform ini menggunakan API publik untuk mendapatkan data harga BBM terbaru dan menampilkannya dengan interface yang clean dan informatif.",
       en: "Web application for checking real-time fuel prices across Indonesia. This platform uses public APIs to get the latest fuel price data and displays it with a clean and informative interface.",
