@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "optimize-images": "node scripts/optimize-images.js"
   },
   "dependencies": {
     "critters": "^0.0.23",
@@ -23,7 +24,11 @@
   },
   "devDependencies": {
     "autoprefixer": "^10",
+    "imagemin": "^9.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
     "postcss": "^8",
+    "sharp": "^0.34.2",
     "tailwindcss": "^3"
   }
 }

@@ -46,6 +46,12 @@ const nextConfig = {
           name: "vendors",
           chunks: "all",
         },
+        images: {
+          test: /\.(png|jpg|jpeg|gif|webp|svg)$/,
+          name: "images",
+          chunks: "all",
+          enforce: true,
+        },
       },
     };
 
@@ -58,7 +64,6 @@ const nextConfig = {
   // Reduce JavaScript bundle size
   experimental: {
     optimizeCss: true,
-    gzipSize: true,
   },
 
   // SEO and performance headers
@@ -82,6 +87,30 @@ const nextConfig = {
           {
             key: "Permissions-Policy",
             value: "camera=(), microphone=(), geolocation=()",
+          },
+        ],
+      },
+      {
+        // Cache images for better performance
+        source: "/IMG/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        // Cache optimized images
+        source: "/IMG/optimized/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+          {
+            key: "X-Content-Type-Options",
+            value: "nosniff",
           },
         ],
       },
