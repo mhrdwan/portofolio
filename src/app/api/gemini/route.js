@@ -17,7 +17,6 @@ export async function POST(req) {
     const genAI = new GoogleGenerativeAI(apiKey);
     const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
-    // Prepare personal context
     const personalContext = `
     Name: ${meData.name}
     Age: ${meData.age}
@@ -43,7 +42,6 @@ export async function POST(req) {
       .join(", ")}
     `;
 
-    // Prepare portfolio context from data
     const portfolioContext = portfolioData
       .map(
         (p) =>

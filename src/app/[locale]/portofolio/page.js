@@ -13,9 +13,8 @@ export default function Portfolio({ params }) {
   const [currentCategory, setCurrentCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Hitung bulan secara dinamis
   const calculateMonths = () => {
-    const startDate = new Date("2023-04-01"); // Tanggal mulai (sesuaikan dengan CV)
+    const startDate = new Date("2023-04-01");
     const currentDate = new Date();
 
     let months =
@@ -23,7 +22,6 @@ export default function Portfolio({ params }) {
       startDate.getMonth() +
       12 * (currentDate.getFullYear() - startDate.getFullYear());
 
-    // Tambahkan 1 untuk menghitung bulan penuh
     return months + 1;
   };
 
