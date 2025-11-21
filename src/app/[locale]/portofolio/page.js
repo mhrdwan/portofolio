@@ -1,6 +1,7 @@
 "use client";
 import React, { useMemo, useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import PageLayout from "../../components/PageLayout";
 import { portfolioData } from "./dataporto";
 import PortfolioItem from "../../components/PortoItems";
@@ -8,7 +9,7 @@ import { useTranslation } from "../../hooks/useTranslation";
 
 export default function Portfolio({ params }) {
   const { t, mounted } = useTranslation();
-  const ITEMS_PER_PAGE = 20;
+  const ITEMS_PER_PAGE = 15;
   const [currentCategory, setCurrentCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -100,7 +101,15 @@ export default function Portfolio({ params }) {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
         {filteredAndPaginatedData?.map((project, index) => (
-          <PortfolioItem key={index} project={project} index={index} />
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.5, delay: index * 0.05 }}
+          >
+            <PortfolioItem project={project} index={index} />
+          </motion.div>
         ))}
       </div>
 

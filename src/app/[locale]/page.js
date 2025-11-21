@@ -22,16 +22,16 @@ export default function Home({ params }) {
 
   return (
     <PageLayout>
-      <div className="min-h-screen bg-black pb-12 px-4 md:px-8 lg:px-12">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div className="md:h-[80vh] bg-black pb-8 px-4 md:px-8 lg:px-12 overflow-hidden flex flex-col">
+        <div className="max-w-7xl mx-auto w-full flex-1 grid grid-cols-1 lg:grid-cols-12 gap-8 min-h-0">
           {/* Terminal Section - Takes 7 cols */}
-          <div className="lg:col-span-7 w-full">
+          <div className="lg:col-span-7 w-full min-h-0 max-h-[70vh] flex flex-col">
             <TerminalHero />
           </div>
 
           {/* Projects Section - Takes 5 cols */}
-          <div className="lg:col-span-5 w-full space-y-6">
-            <div className="flex items-center justify-between mb-2">
+          <div className="lg:col-span-5 w-full h-full overflow-y-auto pr-2 space-y-6 scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-transparent">
+            <div className="flex items-center justify-between mb-2 sticky top-0 bg-black/90 backdrop-blur-sm py-2 z-10">
               <h2 className="text-xl font-bold text-white flex items-center gap-2">
                 <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                 Latest Projects

@@ -13,7 +13,7 @@ const PageLayout = ({ children, showSideBar = true }) => {
   }, []);
 
   return (
-    <main className="px-6 pt-10 lg:pt-0 lg:px-32 bg-black min-h-screen text-white">
+    <main className="px-6 pt-10 lg:pt-0 lg:px-32 bg-black h-screen text-white">
       <Navbar />
       <div className="text-white flex justify-center gap-4 mt-4">
         {showSideBar && (

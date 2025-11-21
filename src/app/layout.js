@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Providers from "./Providers";
+import SmoothScroll from "./components/SmoothScroll";
 import { headers } from "next/headers";
 
 const inter = Poppins({
@@ -158,6 +159,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={`${inter.className} antialiased`}>
+        <SmoothScroll />
         <Providers>{children}</Providers>
       </body>
     </html>

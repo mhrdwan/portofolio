@@ -242,7 +242,7 @@ const TerminalHero = () => {
 
   return (
     <div
-      className="w-full h-[500px] md:h-[600px] bg-[#1e1e1e] rounded-lg shadow-2xl overflow-hidden flex flex-col border border-zinc-700 font-mono text-sm md:text-base"
+      className="w-full h-full bg-[#1e1e1e] rounded-lg shadow-2xl overflow-hidden flex flex-col border border-zinc-700 font-mono text-sm md:text-base"
       onClick={() => inputRef.current?.focus()}
     >
       {/* Terminal Header */}
@@ -285,8 +285,10 @@ const TerminalHero = () => {
         ))}
 
         <div className="flex items-center text-zinc-300 mt-2">
-          <span className="text-green-500 mr-2">➜</span>
-          <span className="text-blue-400 mr-2">~</span>
+          <span className="text-green-500 font-bold">ridwan@portofolio</span>
+          <span className="text-white">:</span>
+          <span className="text-blue-400 font-bold">~</span>
+          <span className="text-white mr-2">$</span>
           <input
             ref={inputRef}
             type="text"
