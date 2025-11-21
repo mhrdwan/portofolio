@@ -114,6 +114,13 @@ const ProgressiveImage = ({
 
   // Use optimized image path automatically
   const optimizedSrc = getOptimizedImagePath(src);
+  const [currentSrc, setCurrentSrc] = useState(optimizedSrc);
+
+  useEffect(() => {
+    setCurrentSrc(getOptimizedImagePath(src));
+    setImageError(false);
+    setImageLoading(true);
+  }, [src]);
 
   const handleLoad = () => {
     setImageLoading(false);
@@ -122,9 +129,8 @@ const ProgressiveImage = ({
 
   const handleError = () => {
     // If optimized image fails, try original
-    if (optimizedSrc !== src) {
-      setImageError(false);
-      // The Image component will automatically retry with fallback
+    if (currentSrc !== src) {
+      setCurrentSrc(src);
     } else {
       setImageLoading(false);
       setImageError(true);
@@ -171,7 +177,7 @@ const ProgressiveImage = ({
         </div>
       )}
       <Image
-        src={optimizedSrc}
+        src={currentSrc}
         alt={alt}
         width={width}
         height={height}
