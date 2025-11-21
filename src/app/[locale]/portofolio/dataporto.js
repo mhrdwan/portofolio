@@ -1,5 +1,67 @@
 export const portfolioData = [
   {
+    title: "Campos Law Firm Platform – Shoppias",
+    image: "/IMG/camposMobile/mockup.png",
+    images: [
+      "/IMG/camposMobile/mockup.png",
+      "/IMG/camposMobile/Screenshot_1763682798.png",
+      "/IMG/camposMobile/Screenshot_1763682824.png",
+      "/IMG/camposMobile/Screenshot_1763682834.png",
+      "/IMG/camposMobile/Screenshot_1763682909.png",
+      "/IMG/camposMobile/Screenshot_1763682938.png",
+      "/IMG/camposMobile/Screenshot_1763682946.png",
+      "/IMG/camposMobile/Screenshot_1763682954.png",
+      "/IMG/camposMobile/Screenshot_1763682970.png",
+      "/IMG/camposMobile/Screenshot_1763683015.png",
+    ],
+    link: "Private",
+    linkText: "Private - Multi-Platform Legal-Tech",
+    technologies: [
+      "React Native (Expo)",
+      "Next.js",
+      "NestJS",
+      "TypeScript",
+      "REST API",
+      "PostgreSQL/MySQL",
+      "JWT Authentication",
+    ],
+    categories: ["Mobile", "Web App", "API"],
+    description: {
+      id: `Campos Law Firm Platform adalah sistem multi-platform yang saya kembangkan selama bekerja di Shoppias, terdiri dari mobile app, web admin, dan backend API. Project ini dirancang untuk mendigitalisasi operasional firma hukum, mulai dari manajemen klien hingga pengelolaan kasus, dokumen, dan jadwal.
+
+Saya membangun aplikasi mobile menggunakan React Native (Expo) untuk klien dan lawyer, membuat dashboard web menggunakan Next.js, dan mengembangkan backend modular menggunakan NestJS. Sistem ini mendukung autentikasi aman, manajemen kasus, upload dokumen, penjadwalan, dan notifikasi. Tujuannya adalah menghadirkan platform legal-tech yang modern, cepat, dan aman.`,
+      en: `Campos Law Firm Platform is a multi-platform system I built while working at Shoppias, consisting of a mobile app, web admin dashboard, and backend API. The project is designed to digitize law firm operations—from client management to case handling, documents, and scheduling.
+
+I built the mobile application with React Native (Expo) for clients and lawyers, the web dashboard with Next.js, and a modular backend using NestJS. The system supports secure authentication, case management, document uploading, scheduling, and notifications. Its goal is to deliver a modern, fast, and secure legal-tech platform.`,
+    },
+    features: {
+      id: [
+        "Aplikasi mobile untuk klien dan pengacara",
+        "Dashboard admin berbasis Next.js",
+        "Manajemen kasus (case lifecycle)",
+        "Upload & manajemen dokumen legal",
+        "Penjadwalan konsultasi & reminders",
+        "Autentikasi JWT & Role-Based Access Control",
+        "Sistem notifikasi dan update real-time",
+        "Backend modular berbasis NestJS",
+        "API terstruktur untuk integrasi cross-platform",
+        "Activity log untuk audit dan keamanan",
+      ],
+      en: [
+        "Mobile app for clients and lawyers",
+        "Admin dashboard built with Next.js",
+        "Case management (case lifecycle)",
+        "Legal document upload & management",
+        "Consultation scheduling & reminders",
+        "JWT Authentication & Role-Based Access Control",
+        "Real-time notifications and updates",
+        "Modular backend powered by NestJS",
+        "Structured API for cross-platform integration",
+        "Activity log for audit and security",
+      ],
+    },
+  },
+  {
     title: "Bot WhatsApp API & Monitoring Dashboard",
     image: "/IMG/botWaMasdis/botWaMasdis.png",
     images: [
