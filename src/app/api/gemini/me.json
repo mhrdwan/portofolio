@@ -1,0 +1,48 @@
+{
+  "name": "Mohamad Hasyim Ridwan",
+  "birth_date": "1999-12-09",
+  "age": 25,
+  "nationality": "Indonesia",
+  "contacts": {
+    "phone": "+6281221871961",
+    "email": "mh.ridwan7b@gmail.com",
+    "website": "",
+    "linkedin": "",
+    "github": ""
+  },
+  "professional_title": "Fullstack Developer (React Native, Backend, DevOps)",
+  "summary": "Versatile Fullstack Developer berpengalaman dalam membangun aplikasi mobile & web skala besar menggunakan React Native, React.js, Node.js, Express.js, Flutter, dan Prisma. Mahir end-to-end development, integrasi payment gateway & virtual account, serta deployment di GCP. Aktif dalam pembangunan sistem e-commerce, logistic tracking, customer service platform, dan automation bot.",
+  "education": {
+    "bachelor": {
+      "institution": "Universitas Bina Nusantara (BINUS)",
+      "major": "Computer Science",
+      "GPA": 3.69,
+      "period": "2024–2026",
+      "focus": ["Machine Learning", "Artificial Intelligence"]
+    },
+    "diploma": {
+      "institution": "Aviation College",
+      "major": "Air Transportation Management",
+      "GPA": 3.34,
+      "period": "2018–2021"
+    }
+  },
+  "skills": {
+    "mobile_development": ["React Native", "Flutter"],
+    "frontend": ["React.js", "Next.js", "Vite", "Tailwind CSS"],
+    "backend": ["Node.js", "Express.js", "NestJS", "REST API", "Prisma ORM"],
+    "databases": ["PostgreSQL", "MySQL", "MongoDB"],
+    "devops": ["GCP", "Docker", "GitLab CI/CD"],
+    "security": ["Red Teaming", "Penetration Testing"],
+    "machine_learning": ["Python", "TensorFlow", "Scikit-learn"]
+  },
+  "certifications": [
+    "Red Teaming: Breaking the Barriers – TAALENTA",
+    "Computer Vision – UI x Widya Institute",
+    "React JS Bootcamp – Edspert.id",
+    "Data Analytics in External Auditing – BINUS",
+    "Digital Advertising – BINUS",
+    "Textile Macroelectronics – BINUS International Experience",
+    "Penetration Testing – ID-Networkers (2023–2026)"
+  ]
+}

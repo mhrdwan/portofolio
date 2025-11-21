@@ -22,10 +22,17 @@ const translations = {
       downloadCV: "Unduh CV",
     },
     home: {
-      title:
-        "Berbagai hal yang telah saya buat untuk meninggalkan jejak di dunia programming.",
+      title: "Mohamad Hasyim Ridwan — Full Stack Developer",
       subtitle:
-        "Saya telah belajar dan bekerja pada beberapa proyek selama {months} bulan terhitung sampai portofolio ini di update tanggal {date}, daftar-daftar ini yang ingin saya tampilkan.",
+        "Saya membangun pengalaman web & mobile modern — bersih, cepat, dan mudah diakses.",
+      ctaPortfolio: "Lihat Portofolio",
+      ctaContact: "Hubungi Saya",
+      previewText: "Proyek pilihan dan studi kasus.",
+      featured: "Proyek Unggulan",
+      viewAll: "Lihat semua proyek",
+      hireTitle: "Mari membangun sesuatu bersama",
+      hireSubtitle: "Tersedia untuk peluang freelance & full-time.",
+      hireCta: "Hubungi Saya",
       buildWith: "Dibuat dengan ❤️ oleh Mohamad Hasyim Ridwan",
     },
     portfolio: {
@@ -89,10 +96,17 @@ const translations = {
       downloadCV: "Download CV",
     },
     home: {
-      title:
-        "Various things I have created to leave a mark in the programming world.",
+      title: "Mohamad Hasyim Ridwan — Full Stack Developer",
       subtitle:
-        "I have been learning and working on several projects for {months} months as of this portfolio update on {date}, these are the lists I want to showcase.",
+        "I build modern web & mobile experiences — clean, fast and accessible.",
+      ctaPortfolio: "View Portfolio",
+      ctaContact: "Contact Me",
+      previewText: "Selected projects and case studies.",
+      featured: "Featured Projects",
+      viewAll: "View all projects",
+      hireTitle: "Let's build something together",
+      hireSubtitle: "Available for freelance & full-time opportunities.",
+      hireCta: "Get in touch",
       buildWith: "Built with ❤️ by Mohamad Hasyim Ridwan",
     },
     portfolio: {

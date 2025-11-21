@@ -10,6 +10,7 @@
     "optimize-images": "node scripts/optimize-images.js"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "critters": "^0.0.23",
     "framer-motion": "^10.18.0",
     "i18next": "^25.2.1",

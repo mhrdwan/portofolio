@@ -16,8 +16,16 @@
     "downloadCV": "Unduh CV"
   },
   "home": {
-    "title": "Berbagai hal yang telah saya buat untuk meninggalkan jejak di dunia programming.",
-    "subtitle": "Saya telah belajar dan bekerja pada beberapa proyek selama {months} bulan terhitung sampai portofolio ini di update tanggal {date}, daftar-daftar ini yang ingin saya tampilkan.",
+    "title": "Mohamad Hasyim Ridwan — Full Stack Developer",
+    "subtitle": "Saya membangun pengalaman web & mobile modern — bersih, cepat, dan mudah diakses.",
+    "ctaPortfolio": "Lihat Portofolio",
+    "ctaContact": "Hubungi Saya",
+    "previewText": "Proyek pilihan dan studi kasus.",
+    "featured": "Proyek Unggulan",
+    "viewAll": "Lihat semua proyek",
+    "hireTitle": "Mari membangun sesuatu bersama",
+    "hireSubtitle": "Tersedia untuk peluang freelance & full-time.",
+    "hireCta": "Hubungi Saya",
     "buildWith": "Dibuat dengan ❤️ oleh Mohamad Hasyim Ridwan"
   },
   "portfolio": {

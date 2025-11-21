@@ -8,7 +8,7 @@ import { useTranslation } from "../../hooks/useTranslation";
 
 export default function Portfolio({ params }) {
   const { t, mounted } = useTranslation();
-  const ITEMS_PER_PAGE = 6;
+  const ITEMS_PER_PAGE = 20;
   const [currentCategory, setCurrentCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
 

@@ -16,8 +16,16 @@
     "downloadCV": "Download CV"
   },
   "home": {
-    "title": "Various things I have created to leave a mark in the programming world.",
-    "subtitle": "I have been learning and working on several projects for {months} months as of this portfolio update on {date}, these are the lists I want to showcase.",
+    "title": "Mohamad Hasyim Ridwan — Full Stack Developer",
+    "subtitle": "I build modern web & mobile experiences — clean, fast and accessible.",
+    "ctaPortfolio": "View Portfolio",
+    "ctaContact": "Contact Me",
+    "previewText": "Selected projects and case studies.",
+    "featured": "Featured Projects",
+    "viewAll": "View all projects",
+    "hireTitle": "Let's build something together",
+    "hireSubtitle": "Available for freelance & full-time opportunities.",
+    "hireCta": "Get in touch",
     "buildWith": "Built with ❤️ by Mohamad Hasyim Ridwan"
   },
   "portfolio": {
