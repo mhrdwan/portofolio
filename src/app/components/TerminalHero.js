@@ -76,11 +76,9 @@ const TerminalHero = () => {
       await typeText([
         "Initializing MHRidwan Terminal v2.0.0...",
         "Loading portfolio data...",
-        "Connecting to AI module...",
         "System Ready.",
-        "-------------------------------------",
         "Welcome! I am Ridwan's interactive portfolio terminal.",
-        "Type 'help' to see what I can do, or just ask me anything!",
+        "I know everything about Ridwan. Ask me anything!",
       ]);
     };
     init();
