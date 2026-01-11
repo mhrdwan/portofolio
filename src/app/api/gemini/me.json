@@ -1,15 +1,15 @@
 {
   "name": "Mohamad Hasyim Ridwan",
   "birth_date": "1999-12-09",
-  "age": 25,
+  "age": "birth_date - date now",
   "address": "jakarta timur , dki jakarta",
   "nationality": "Indonesia",
   "contacts": {
     "phone": "+6281221871961",
     "email": "mh.ridwan7b@gmail.com",
-    "website": "",
-    "linkedin": "",
-    "github": ""
+    "website": "mhridwan.tech",
+    "linkedin": "https://www.linkedin.com/in/mohamad-hasyim-ridwan-1a1762b8/",
+    "github": "https://github.com/mhrdwan"
   },
   "professional_title": "Fullstack Developer (React Native, Backend, DevOps)",
   "summary": "Versatile Fullstack Developer berpengalaman dalam membangun aplikasi mobile & web skala besar menggunakan React Native, React.js, Node.js, Express.js, Flutter, dan Prisma. Mahir end-to-end development, integrasi payment gateway & virtual account, serta deployment di GCP. Aktif dalam pembangunan sistem e-commerce, logistic tracking, customer service platform, dan automation bot.",
