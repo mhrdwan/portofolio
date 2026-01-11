@@ -20,12 +20,12 @@ export const metadata = {
   authors: [{ name: "Mohamad Hasyim Ridwan" }],
   creator: "Mohamad Hasyim Ridwan",
   publisher: "Mohamad Hasyim Ridwan",
-  metadataBase: new URL("https://mhridwan.com"),
+  metadataBase: new URL("https://mhridwan.tech"),
   alternates: {
-    canonical: "https://mhridwan.com",
+    canonical: "https://mhridwan.tech",
     languages: {
-      "id-ID": "https://mhridwan.com",
-      "en-US": "https://mhridwan.com/en",
+      "id-ID": "https://mhridwan.tech",
+      "en-US": "https://mhridwan.tech/en",
     },
   },
   robots: {
@@ -42,14 +42,14 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://mhridwan.com",
+    url: "https://mhridwan.tech",
     siteName: "Mohamad Hasyim Ridwan Portfolio",
     title: "Mohamad Hasyim Ridwan - Full Stack Developer",
     description:
       "Portfolio website of Mohamad Hasyim Ridwan, Full Stack Developer specializing in React.js, Next.js, React Native and API design.",
     images: [
       {
-        url: "https://mhridwan.com/IMG/363815310_9666831353387427_1604163039826260738_n.jpg",
+        url: "https://mhridwan.tech/IMG/363815310_9666831353387427_1604163039826260738_n.jpg",
         width: 1200,
         height: 630,
         alt: "Mohamad Hasyim Ridwan - Full Stack Developer",
@@ -62,7 +62,7 @@ export const metadata = {
     description:
       "Portfolio website of Mohamad Hasyim Ridwan, Full Stack Developer specializing in React.js, Next.js, React Native and API design.",
     images: [
-      "https://mhridwan.com/IMG/363815310_9666831353387427_1604163039826260738_n.jpg",
+      "https://mhridwan.tech/IMG/363815310_9666831353387427_1604163039826260738_n.jpg",
     ],
   },
   verification: {
@@ -136,7 +136,7 @@ export default async function RootLayout({ children }) {
               "@type": "Person",
               name: "Mohamad Hasyim Ridwan",
               jobTitle: "Full Stack Developer",
-              url: "https://mhridwan.com",
+              url: "https://mhridwan.tech",
               sameAs: [
                 "https://github.com/mhrdwan",
                 "https://instagram.com/mhridwan14",

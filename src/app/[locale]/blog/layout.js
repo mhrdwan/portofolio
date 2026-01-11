@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
   }
 
   // Get current URL path for canonical
-  const baseUrl = "https://mhridwan.com";
+  const baseUrl = "https://mhridwan.tech";
   const currentPath =
     locale === "id" ? `${baseUrl}/blog` : `${baseUrl}/${locale}/blog`;
 

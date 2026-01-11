@@ -2,4 +2,4 @@ Contact: mailto:mh.ridwan7b@gmail.com
 Expires: 2025-12-31T23:59:59.000Z
 Encryption: https://keybase.io/mhridwan
 Preferred-Languages: id, en
-Canonical: https://mhridwan.com/.well-known/security.txt 
+Canonical: https://mhridwan.tech/.well-known/security.txt 
