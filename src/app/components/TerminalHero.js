@@ -91,10 +91,15 @@ const TerminalHero = () => {
     init();
   }, []);
 
-  useEffect(() => {
+  // Auto-scroll to bottom when history changes or during typing
+  const scrollToBottom = () => {
     if (containerRef.current) {
       containerRef.current.scrollTop = containerRef.current.scrollHeight;
     }
+  };
+
+  useEffect(() => {
+    scrollToBottom();
   }, [history]);
 
   // Word-by-word typing effect for AI responses
@@ -138,6 +143,9 @@ const TerminalHero = () => {
           return newHistory;
         });
         
+        // Scroll to bottom during typing
+        scrollToBottom();
+        
         // Delay between words (40-80ms for natural feel)
         await new Promise((resolve) => setTimeout(resolve, 40 + Math.random() * 40));
       }
@@ -153,7 +161,7 @@ const TerminalHero = () => {
     setIsTyping(true);
     setHistory((prev) => [
       ...prev,
-      { type: "output", content: [locale === "id" ? "Berpikir..." : "Thinking..."] },
+      { type: "output", content: [locale === "id" ? "Loading..." : "Loading..."] },
     ]);
 
     try {
@@ -191,6 +199,11 @@ const TerminalHero = () => {
       });
     } finally {
       setIsTyping(false);
+      // Refocus input and scroll to bottom after AI response
+      setTimeout(() => {
+        inputRef.current?.focus();
+        scrollToBottom();
+      }, 100);
     }
   };
 
@@ -291,6 +304,11 @@ const TerminalHero = () => {
     if (e.key === "Enter" && !isTyping) {
       handleCommand(input);
       setInput("");
+      // Keep focus on input after command
+      setTimeout(() => {
+        inputRef.current?.focus();
+        scrollToBottom();
+      }, 50);
     }
   };
 
