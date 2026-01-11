@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { use } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import PageLayout from "../components/PageLayout";
@@ -8,6 +8,7 @@ import { useTranslation } from "../hooks/useTranslation";
 import { portfolioData } from "./portofolio/dataporto";
 
 export default function Home({ params }) {
+  const { locale } = use(params);
   const { mounted } = useTranslation();
 
   if (!mounted) {
@@ -37,7 +38,7 @@ export default function Home({ params }) {
                 Latest Projects
               </h2>
               <Link
-                href={`/${params.locale}/portofolio`}
+                href={`/${locale}/portofolio`}
                 className="text-zinc-400 hover:text-green-400 text-xs font-mono transition-colors"
               >
                 View All_
@@ -67,7 +68,7 @@ export default function Home({ params }) {
                           {project.title}
                         </h3>
                         <p className="text-zinc-400 text-[10px] mt-1 line-clamp-2 leading-relaxed">
-                          {project.description[params.locale] ||
+                          {project.description[locale] ||
                             project.description.en}
                         </p>
                       </div>

@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 const locales = ["id", "en"];
 
 export async function generateMetadata({ params }) {
-  const { locale } = params;
+  const { locale } = await params;
 
   if (!locales.includes(locale)) {
     notFound();

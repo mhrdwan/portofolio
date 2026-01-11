@@ -1,11 +1,12 @@
 "use client";
-import React from "react";
+import React, { use } from "react";
 import Navbar from "../../components/Navbar";
 import SisiKiri from "../../components/SisiKiri";
 import PageLayout from "../../components/PageLayout";
 import { useTranslation } from "../../hooks/useTranslation";
 
 function Blog({ params }) {
+  const resolvedParams = use(params);
   const { t, mounted } = useTranslation();
 
   if (!mounted) {

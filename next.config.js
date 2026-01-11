@@ -32,8 +32,8 @@ const nextConfig = {
   // Enable compression
   compress: true,
 
-  // Performance optimizations
-  swcMinify: true,
+  // Turbopack configuration (Next.js 16+)
+  turbopack: {},
 
   // Bundle analyzer for debugging (optional)
   webpack: (config, { isServer }) => {

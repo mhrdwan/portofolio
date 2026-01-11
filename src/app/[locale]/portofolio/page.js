@@ -1,5 +1,5 @@
 "use client";
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, use } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import PageLayout from "../../components/PageLayout";
@@ -8,6 +8,7 @@ import PortfolioItem from "../../components/PortoItems";
 import { useTranslation } from "../../hooks/useTranslation";
 
 export default function Portfolio({ params }) {
+  const resolvedParams = use(params);
   const { t, mounted } = useTranslation();
   const ITEMS_PER_PAGE = 15;
   const [currentCategory, setCurrentCategory] = useState("All");
