@@ -18,6 +18,88 @@ export interface PortfolioItem {
 
 export const portfolioData: PortfolioItem[] = [
   {
+    title: "Halaman Baru Coffee (HALBAR)",
+    image: "/IMG/halbar/halbar_hero.png",
+    images: [
+      "/IMG/halbar/halbar_hero.png",
+      "/IMG/halbar/halbar_menu.png",
+      "/IMG/halbar/halbar_mocktail.png",
+    ],
+    link: "https://halbar.mhridwan.tech/",
+    linkText: "https://halbar.mhridwan.tech/",
+    technologies: [
+      "Next.js",
+      "TailwindCSS",
+      "TypeScript",
+      "Framer Motion",
+      "Responsive Design",
+    ],
+    categories: ["Web App", "Landing Page"],
+    description: {
+      id: `Website landing page interaktif dan modern untuk Halaman Baru Coffee (3 cabang di Jakarta, Bogor, dan Tangerang). Mengusung konsep desain editorial yang hangat dan berkarakter, menampilkan katalog menu kopi & mocktail series, storytelling brand, multi-outlet directory, serta integrasi tombol reservasi WhatsApp langsung.`,
+      en: `An interactive and modern landing page website for Halaman Baru Coffee (3 branches across Jakarta, Bogor, and Tangerang). Featuring an editorial, warm, and characterful design showcase, digital coffee & mocktail menu series, brand storytelling, multi-outlet directory, and direct WhatsApp reservation integration.`,
+    },
+    features: {
+      id: [
+        "Desain editorial & tipografi modern berkarakter",
+        "Katalog menu kopi & mocktail interaktif",
+        "Integrasi reservasi meja & order langsung via WhatsApp",
+        "Direktori multi-cabang (Jakarta, Bogor, Tangerang)",
+        "Mobile-first layout & ultra-responsive",
+        "Fast loading dan optimasi performa tinggi",
+      ],
+      en: [
+        "Editorial design & characterful modern typography",
+        "Interactive coffee & mocktail digital menu",
+        "Direct table reservation & ordering via WhatsApp",
+        "Multi-outlet directory (Jakarta, Bogor, Tangerang)",
+        "Mobile-first layout & ultra-responsive",
+        "Fast loading and high performance optimization",
+      ],
+    },
+  },
+  {
+    title: "Halaman Pertama Kitchen & Coffee",
+    image: "/IMG/halper/halper_hero.png",
+    images: [
+      "/IMG/halper/halper_hero.png",
+      "/IMG/halper/halper_menu.png",
+      "/IMG/halper/halper_events.png",
+    ],
+    link: "https://halper.mhridwan.tech/",
+    linkText: "https://halper.mhridwan.tech/",
+    technologies: [
+      "Next.js",
+      "TailwindCSS",
+      "TypeScript",
+      "Framer Motion",
+      "Responsive Design",
+    ],
+    categories: ["Web App", "Landing Page"],
+    description: {
+      id: `Landing page estetik dan interaktif untuk Halaman Pertama Kitchen & Coffee (Ciracas, Jakarta Timur). Menampilkan showcase suasana courtyard outdoor yang hangat, highlight signature menu & comfort food, paket sewa tempat perayaan/acara (Birthday, Wedding, Gathering), serta integrasi navigasi Google Maps dan pemesanan via WhatsApp.`,
+      en: `An aesthetic and interactive landing page for Halaman Pertama Kitchen & Coffee (Ciracas, East Jakarta). Featuring courtyard venue showcase, signature comfort food & drink highlights, space rental booking for celebrations (Birthday, Wedding, Gathering), and integrated Google Maps navigation & WhatsApp booking.`,
+    },
+    features: {
+      id: [
+        "Showcase venue courtyard & suasana outdoor yang hangat",
+        "Highlight menu signature & comfort food favorit",
+        "Sistem reservasi sewa tempat acara (Wedding, Birthday, Gathering)",
+        "Integrasi navigasi Google Maps & jam operasional terupdate",
+        "Desain mobile-first responsif dengan animasi halus",
+        "Fast loading & optimasi SEO",
+      ],
+      en: [
+        "Courtyard venue & warm outdoor ambience showcase",
+        "Signature menu & favorite comfort food highlights",
+        "Event & venue rental reservation flow (Wedding, Birthday, Gathering)",
+        "Google Maps navigation & up-to-date operational hours integration",
+        "Responsive mobile-first layout with smooth animations",
+        "Fast loading & SEO optimization",
+      ],
+    },
+  },
+  {
     title: "Campos Law Firm Platform – Shoppias",
     image: "/IMG/camposMobile/mockup.png",
     images: [
