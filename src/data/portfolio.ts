@@ -18,6 +18,54 @@ export interface PortfolioItem {
 
 export const portfolioData: PortfolioItem[] = [
   {
+    title: "NEUROX - F&B Operating System & Enterprise HRIS / ERP",
+    image: "/IMG/neurox/neurox_hero.png",
+    images: [
+      "/IMG/neurox/neurox_hero.png",
+      "/IMG/neurox/neurox_modules.png",
+      "/IMG/neurox/neurox_features.png",
+      "/IMG/neurox/neurox_packages.png",
+    ],
+    link: "https://myneurox.com/",
+    linkText: "https://myneurox.com/",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "PostgreSQL",
+      "HRIS Engine",
+      "Double-Entry Accounting",
+      "Cloud Architecture",
+      "Framer Motion",
+      "Responsive Design",
+    ],
+    categories: ["Web App", "HRIS & Payroll", "Finance ERP", "SaaS Platform"],
+    description: {
+      id: `Sistem Operasi F&B & Enterprise ERP/HRIS all-in-one untuk industri restoran dan kafe di Malaysia. Menghubungkan seluruh lini bisnis dari front-of-house hingga back-office dalam 11 modul terpadu: POS kasir, dapur & resep COGS otomatis, sistem HRIS lengkap (absensi geofence selfie, roster shift, cuti, pinjaman/advance, payroll & slip gaji otomatis), akuntansi pembukuan dua catatan (double-entry general ledger), manajemen tugas SOP outlet, hingga mobile app mandiri untuk kru restoran.`,
+      en: `An all-in-one F&B Operating System, Enterprise ERP & HRIS built for restaurant and cafe businesses in Malaysia. Seamlessly connecting front-of-house to back-office operations across 11 integrated modules: POS cashier, kitchen recipe & dynamic COGS, complete HRIS suite (geofenced selfie clock-in, shift rostering, leave/advance claims, automated payroll & statutory payslips), double-entry accounting ledger, outlet SOP task manager, and dedicated mobile apps for restaurant staff.`,
+    },
+    features: {
+      id: [
+        "HRIS & Payroll Otomatis: Absensi geofence + selfie, penjadwalan roster shift, manajemen cuti, advance, serta slip gaji & potongan wajib otomatis",
+        "Finance & Double-Entry Accounting: Buku besar otomatis terisi dari transaksi POS kasir & COGS resep, menghasilkan laporan laba rugi real-time tanpa input manual",
+        "Kitchen & Inventory Management: Resep terhubung langsung ke harga bahan, modal menu (COGS) dihitung otomatis, dan stok terpotong setiap transaksi",
+        "POS & Front-of-House: Kasir, manajemen meja, split bill, dan QR self-order dengan satu engine harga",
+        "Office, SOP & Task Management: Penugasan harian outlet, checklist buka/tutup toko, serta pengumuman internal bertanda terima",
+        "Mobile App Kru (Android/iOS): Aplikasi mandiri untuk staf mengecek jadwal shift, clock-in, dan slip gaji langsung dari ponsel",
+        "Skalabilitas Multi-Outlet: Dirancang siap pakai dari 1 gerai hingga jaringan waralaba puluhan cabang",
+      ],
+      en: [
+        "Comprehensive HRIS & Automated Payroll: Geofenced selfie clock-in, weekly shift rostering, leave/advance management, and statutory payroll payslip generation",
+        "Finance & Double-Entry Ledger: POS transactions automatically post to the general ledger and COGS, giving real-time P&L insights without Excel spreadsheets",
+        "Kitchen & Recipe COGS Engine: Ingredient costs dynamically calculate menu margins and decrement stock in real time upon sales",
+        "POS & Front-of-House: Cashier, table management, split bills, and QR self-ordering on a unified pricing engine",
+        "Office, SOP & Task Management: Daily store opening/closing checklists, task delegation, and verified announcement receipts",
+        "Mobile Staff App (Android/iOS): Dedicated employee self-service app for checking rosters, clock-in, and downloading payslips",
+        "Multi-Outlet Scalability: Built to scale seamlessly from single standalone cafes to multi-chain franchise operations",
+      ],
+    },
+  },
+  {
     title: "Halaman Baru Coffee (HALBAR)",
     image: "/IMG/halbar/halbar_hero.png",
     images: [
